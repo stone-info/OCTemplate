@@ -572,6 +572,14 @@
 		8EE2C29122968AC3001F639B /* PYSearchConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE2C28822968AC2001F639B /* PYSearchConst.m */; };
 		8EE2C29222968AC3001F639B /* PYSearch.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8EE2C28922968AC2001F639B /* PYSearch.bundle */; };
 		8EE2C29322968AC3001F639B /* UIView+PYSearchExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE2C28A22968AC2001F639B /* UIView+PYSearchExtension.m */; };
+		8EE2C29C22973B6D001F639B /* NSData+Digest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE2C29422973B68001F639B /* NSData+Digest.m */; };
+		8EE2C29D22973B6D001F639B /* NSData+CommomCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE2C29522973B6B001F639B /* NSData+CommomCryptor.m */; };
+		8EE2C29E22973B6D001F639B /* NSData+HMAC.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EE2C29622973B6B001F639B /* NSData+HMAC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EE2C29F22973B6D001F639B /* NSData+HMAC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE2C29722973B6B001F639B /* NSData+HMAC.m */; };
+		8EE2C2A022973B6D001F639B /* NSData+CustomPadding.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EE2C29822973B6C001F639B /* NSData+CustomPadding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EE2C2A122973B6D001F639B /* NSData+CustomPadding.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE2C29922973B6C001F639B /* NSData+CustomPadding.m */; };
+		8EE2C2A222973B6D001F639B /* NSData+CommomCryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EE2C29A22973B6C001F639B /* NSData+CommomCryptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EE2C2A322973B6D001F639B /* NSData+Digest.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EE2C29B22973B6C001F639B /* NSData+Digest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		950DEE9967D9A381F91E3F34 /* Pods_ExampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FFF79F65B7EDEEC99571D36 /* Pods_ExampleUITests.framework */; };
 		AB1FE1270E6DF4A5EDBF7F45 /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D4074C99FD8F414398C018 /* Pods_Example.framework */; };
 /* End PBXBuildFile section */
@@ -1569,6 +1577,14 @@
 		8EE2C28A22968AC2001F639B /* UIView+PYSearchExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PYSearchExtension.m"; sourceTree = "<group>"; };
 		8EE2C28B22968AC2001F639B /* UIColor+PYSearchExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+PYSearchExtension.h"; sourceTree = "<group>"; };
 		8EE2C28C22968AC3001F639B /* PYSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYSearch.h; sourceTree = "<group>"; };
+		8EE2C29422973B68001F639B /* NSData+Digest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Digest.m"; sourceTree = "<group>"; };
+		8EE2C29522973B6B001F639B /* NSData+CommomCryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+CommomCryptor.m"; sourceTree = "<group>"; };
+		8EE2C29622973B6B001F639B /* NSData+HMAC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+HMAC.h"; sourceTree = "<group>"; };
+		8EE2C29722973B6B001F639B /* NSData+HMAC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+HMAC.m"; sourceTree = "<group>"; };
+		8EE2C29822973B6C001F639B /* NSData+CustomPadding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+CustomPadding.h"; sourceTree = "<group>"; };
+		8EE2C29922973B6C001F639B /* NSData+CustomPadding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+CustomPadding.m"; sourceTree = "<group>"; };
+		8EE2C29A22973B6C001F639B /* NSData+CommomCryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+CommomCryptor.h"; sourceTree = "<group>"; };
+		8EE2C29B22973B6C001F639B /* NSData+Digest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Digest.h"; sourceTree = "<group>"; };
 		9BBE7CD6FCCDBE905A4DA76F /* Pods-ExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleTests.release.xcconfig"; path = "Target Support Files/Pods-ExampleTests/Pods-ExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		AC31F1EE1F169C853D173476 /* Pods_ExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D20739CA46D3C945B844F924 /* Pods-ExampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleUITests.release.xcconfig"; path = "Target Support Files/Pods-ExampleUITests/Pods-ExampleUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -1709,6 +1725,14 @@
 		8EE2B5412295B5D8001F639B /* categories */ = {
 			isa = PBXGroup;
 			children = (
+				8EE2C29A22973B6C001F639B /* NSData+CommomCryptor.h */,
+				8EE2C29522973B6B001F639B /* NSData+CommomCryptor.m */,
+				8EE2C29822973B6C001F639B /* NSData+CustomPadding.h */,
+				8EE2C29922973B6C001F639B /* NSData+CustomPadding.m */,
+				8EE2C29B22973B6C001F639B /* NSData+Digest.h */,
+				8EE2C29422973B68001F639B /* NSData+Digest.m */,
+				8EE2C29622973B6B001F639B /* NSData+HMAC.h */,
+				8EE2C29722973B6B001F639B /* NSData+HMAC.m */,
 				8EE2C27C229688AB001F639B /* Foundation+Log.h */,
 				8EE2C27B229688AB001F639B /* Foundation+Log.m */,
 				8EE2C23D2295C85B001F639B /* UIView+Base.h */,
@@ -4372,6 +4396,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EE2C29E22973B6D001F639B /* NSData+HMAC.h in Headers */,
+				8EE2C2A222973B6D001F639B /* NSData+CommomCryptor.h in Headers */,
+				8EE2C2A022973B6D001F639B /* NSData+CustomPadding.h in Headers */,
+				8EE2C2A322973B6D001F639B /* NSData+Digest.h in Headers */,
 				8EE2C25F229636D9001F639B /* EHHorizontalSelectionView.h in Headers */,
 				8EE2C25C229636D9001F639B /* EHHorizontalLineViewCell.h in Headers */,
 				8EE2C260229636D9001F639B /* EHRoundedHorizontalViewCell.h in Headers */,
@@ -4805,6 +4833,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EE2C25E229636D9001F639B /* EHHorizontalViewCell.m in Sources */,
+				8EE2C29F22973B6D001F639B /* NSData+HMAC.m in Sources */,
 				8EE2C1FE2295C04F001F639B /* SNRegex.m in Sources */,
 				8EE2B5E12295BD9E001F639B /* NSString+YYAdd.m in Sources */,
 				8EE2C1F92295C04F001F639B /* SNColorBoard.m in Sources */,
@@ -4823,6 +4852,7 @@
 				8EE2C1DC2295C007001F639B /* SNAttributesHandler.m in Sources */,
 				8EE2C26B229637D3001F639B /* UIImage+UIImageAdditions.m in Sources */,
 				8EE2B5DB2295BD9E001F639B /* UIImage+ImageExtension.m in Sources */,
+				8EE2C29D22973B6D001F639B /* NSData+CommomCryptor.m in Sources */,
 				8EE2C1DF2295C007001F639B /* SNScrollView.m in Sources */,
 				8EE2C1DA2295C007001F639B /* SNImageView.m in Sources */,
 				8EE2B5DE2295BD9E001F639B /* NSArray+ArrayExtentsion.m in Sources */,
@@ -4836,8 +4866,10 @@
 				8EE2B5E62295BD9E001F639B /* NSDate+Time.m in Sources */,
 				8EE2B5E22295BD9E001F639B /* UINavigationBar+NavgationBarExtension.m in Sources */,
 				8EE2C1D52295C007001F639B /* SNViewFactory.m in Sources */,
+				8EE2C29C22973B6D001F639B /* NSData+Digest.m in Sources */,
 				8EE2C1F62295C04F001F639B /* SNHexColor.m in Sources */,
 				8EE2C259229636D9001F639B /* EHRoundedHorizontalViewCell.m in Sources */,
+				8EE2C2A122973B6D001F639B /* NSData+CustomPadding.m in Sources */,
 				8EE2C25D229636D9001F639B /* EHHorizontalLineViewCell.m in Sources */,
 				8EE2C1E22295C007001F639B /* SNButton.m in Sources */,
 				8EE2C23E2295C85C001F639B /* UIView+Base.m in Sources */,
@@ -5481,7 +5513,6 @@
 				DEVELOPMENT_TEAM = CCY4J8QDXD;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PRODUCT_NAME)/SNPrefix.pch";
 				INFOPLIST_FILE = Example/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -5563,7 +5594,6 @@
 				DEVELOPMENT_TEAM = CCY4J8QDXD;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PRODUCT_NAME)/SNPrefix.pch";
 				INFOPLIST_FILE = Example/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

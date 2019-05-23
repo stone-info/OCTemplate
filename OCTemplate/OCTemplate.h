@@ -82,3 +82,5 @@ FOUNDATION_EXPORT const unsigned char OCTemplateVersionString[];
 
 // category
 #import <OCTemplate/NSString+StringExtension.h>
+#import <OCTemplate/NSData+CommomCryptor.h>
+#import <OCTemplate/NSData+CustomPadding.h>
