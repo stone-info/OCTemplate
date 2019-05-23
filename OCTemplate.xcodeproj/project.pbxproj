@@ -5481,6 +5481,7 @@
 				DEVELOPMENT_TEAM = CCY4J8QDXD;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PRODUCT_NAME)/SNPrefix.pch";
 				INFOPLIST_FILE = Example/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -5562,6 +5563,7 @@
 				DEVELOPMENT_TEAM = CCY4J8QDXD;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PRODUCT_NAME)/SNPrefix.pch";
 				INFOPLIST_FILE = Example/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
