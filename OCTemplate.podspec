@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "OCTemplate"
-spec.version = "0.0.4"
+spec.version = "0.0.5"
   spec.summary      = "A short description of OCTemplate."
 
   # This description is used to generate tags and improve search results.
@@ -89,12 +89,42 @@ spec.version = "0.0.4"
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "OCTemplate", "OCTemplate/**/*.{h,m}"
-  # spec.exclude_files = "Classes/Exclude"
-  spec.public_header_files = "OCTemplate/**/*.h"
+  # spec.source_files  = "OCTemplate", "OCTemplate/**/*.{h,m}"
+  # # spec.exclude_files = "Classes/Exclude"
+  # spec.public_header_files = "OCTemplate/**/*.h"
+  # spec.resource_bundles = {
+  #   'OCTemplate' => ['OCTemplate/**/*.xib']
+  # }
+  spec.public_header_files = 'OCTemplate/OCTemplate.h'
+  spec.source_files = 'OCTemplate/OCTemplate.h'
   spec.resource_bundles = {
     'OCTemplate' => ['OCTemplate/**/*.xib']
   }
+
+  spec.subspec 'ThirdParty' do |ss|
+    ss.source_files = 'OCTemplate/ThirdParty/**/*.{h,m}'
+    ss.public_header_files = 'OCTemplate/ThirdParty/**/*.h'
+  end
+
+  spec.subspec 'categories' do |ss|
+    ss.source_files = 'OCTemplate/categories/*.{h,m}'
+    ss.public_header_files = 'OCTemplate/categories/*.h'
+  end
+
+  spec.subspec 'templates' do |ss|
+    ss.source_files = 'OCTemplate/templates/*.{h,m}'
+    ss.public_header_files = 'OCTemplate/templates/*.h'
+  end
+
+  spec.subspec 'tools' do |ss|
+    ss.source_files = 'OCTemplate/tools/*.{h,m}'
+    ss.public_header_files = 'OCTemplate/tools/*.h'
+  end
+
+  spec.subspec 'views' do |ss|
+    ss.source_files = 'OCTemplate/views/*.{h,m}'
+    ss.public_header_files = 'OCTemplate/views/*.h'
+  end
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
