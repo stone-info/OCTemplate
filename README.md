@@ -17,11 +17,11 @@ end
 
 
 ## Push私有模块工程
+## commit整个工程代码
+## 打上tag 0.0.1（下节会使用到）
+## push到远程私有仓库（Coding）
 
 ```bash
-# commit整个工程代码
-# 打上tag 0.0.1（下节会使用到）
-# push到远程私有仓库（Coding）
 git add .
 git commit -m "add repo"
 git tag 0.0.1
