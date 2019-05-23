@@ -46,27 +46,25 @@ const { dlog, Info } = require('../lib/dlog')
     // git tag 0.0.1
     // git push --tags
 
-    // let stream = execa('bash', [
-    //   path.resolve(__dirname, './index.sh'),
-    //   lastVersion
-    // ]).stdout
-    //
-    // stream.pipe(process.stdout)
-    //
-    // stream.on('end', function () {
-    //   // 先执行end
-    //   dlog(`这么快?`, new Info)
-    // })
-    //
-    // stream.on('close', function () {
-    //   // 后执行close
-    //   dlog(`结束了?`, new Info)
-    // })
-
-    let {stdout} = await execa('bash', [
+    let stream = execa('bash', [
       path.resolve(__dirname, './index.sh'),
       lastVersion
-    ])
-    dlog(stdout, new Info(`stdout`), 0)
+    ]).stdout
+
+    stream.pipe(process.stdout)
+
+    stream.on('end', function () {
+      // 先执行end
+    })
+
+    stream.on('close', function () {
+      // 后执行close
+    })
+
+    // let {stdout} = await execa('bash', [
+    //   path.resolve(__dirname, './index.sh'),
+    //   lastVersion
+    // ])
+    // dlog(stdout, new Info(`stdout`), 0)
   }
 })()
