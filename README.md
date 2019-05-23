@@ -60,3 +60,11 @@ git add PrivatePodTest.podspec
 git commit -m "update podspec"
 git push
 ```
+
+- 删除tag
+
+```bash
+git tag -d <tagname>
+git push origin :refs/tags/<tagname>
+```
+
