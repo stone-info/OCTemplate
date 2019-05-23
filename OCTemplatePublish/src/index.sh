@@ -26,3 +26,7 @@ git push --tags
 
 #git status
 #echo $1
+
+git add .
+git commit -m "update podspec ${1}"
+git push
