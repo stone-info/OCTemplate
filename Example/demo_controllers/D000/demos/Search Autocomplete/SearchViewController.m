@@ -9,6 +9,7 @@
 #import "LabelSectionController.h"
 #import "SearchSectionController.h"
 #import <IGListKit/IGListKit.h>
+#import <OCTemplate/NSArray+ES6.h>
 
 @interface SearchViewController () <IGListAdapterDataSource, SearchSectionControllerDelegate>
 @property (strong, nonatomic) UICollectionView    *collectionView;
@@ -95,6 +96,8 @@
 // }
 
 #pragma mark - <IGListAdapterDataSource>
+
+
 
 // 返回遵守IGListDiffable协议的 对象数组, @(1) number类型和 字符串 好像默认遵守了该协议, 待研究
 - (NSArray<id <IGListDiffable>> *)objectsForListAdapter:(IGListAdapter *)listAdapter {

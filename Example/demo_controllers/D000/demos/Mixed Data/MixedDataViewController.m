@@ -78,17 +78,17 @@
   return _adapter;
 }
 
-
-
 - (void)viewDidLoad {
   [super viewDidLoad];
   // Do any additional setup after loading the view.
 
   self.selectedClass = NSNull.class;
 
-  UISegmentedControl *control = [[UISegmentedControl alloc] initWithItems:[self.segments map:^NSString *(NSDictionary *obj,NSUInteger idx) {
+  NSArray            *items   = [self.segments map:^NSString *(NSDictionary *obj, NSUInteger idx) {
     return obj.allKeys[0];
-  }]];
+  }];
+
+  UISegmentedControl *control = [[UISegmentedControl alloc] initWithItems:items];
   control.selectedSegmentIndex = 0;
   [control addTarget:self action:@selector(onControl:) forControlEvents:UIControlEventValueChanged];
   self.navigationItem.titleView = control;
@@ -113,7 +113,6 @@
     self.adapter.moveDelegate = self;
   }
 }
-
 
 - (void)handleLongGesture:(UILongPressGestureRecognizer *)sender {
   NSLog(@"%s", __func__);
@@ -176,10 +175,11 @@
 - (NSArray<id <IGListDiffable>> *)objectsForListAdapter:(IGListAdapter *)listAdapter {
 
   if (self.selectedClass == NSNull.class) {
-    return [self.data map:^id(id obj,NSUInteger idx) { return obj; }];
+    // return [self.data mapWithBlock:^id(id obj, NSUInteger idx) { return obj; }];
+    return [self.data map:^id(id obj, NSUInteger idx) { return obj; }];
   }
 
-  return [self.data filter:^BOOL(id obj,NSUInteger idx) {
+  return [self.data filter:^BOOL(id obj, NSUInteger idx) {
     return [obj isKindOfClass:self.selectedClass];
   }];
 }

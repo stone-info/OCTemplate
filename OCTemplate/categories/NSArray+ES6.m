@@ -12,6 +12,7 @@
 
 #pragma mark - Map, filter, reduce, flatMap function without class restrictor
 
+
 - (NSArray *)map:(id (^)(id obj, NSUInteger idx))block {
   NSMutableArray *mutableArray = [NSMutableArray new];
   [self enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
