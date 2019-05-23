@@ -558,19 +558,21 @@
 		8EE2C258229636D9001F639B /* EHHorizontalViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EE2C24F229636D9001F639B /* EHHorizontalViewCell.xib */; };
 		8EE2C259229636D9001F639B /* EHRoundedHorizontalViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE2C250229636D9001F639B /* EHRoundedHorizontalViewCell.m */; };
 		8EE2C25A229636D9001F639B /* EHHorizontalSelectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE2C251229636D9001F639B /* EHHorizontalSelectionView.m */; };
-		8EE2C25B229636D9001F639B /* EHHorizontalViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EE2C252229636D9001F639B /* EHHorizontalViewCell.h */; };
-		8EE2C25C229636D9001F639B /* EHHorizontalLineViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EE2C253229636D9001F639B /* EHHorizontalLineViewCell.h */; };
+		8EE2C25B229636D9001F639B /* EHHorizontalViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EE2C252229636D9001F639B /* EHHorizontalViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EE2C25C229636D9001F639B /* EHHorizontalLineViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EE2C253229636D9001F639B /* EHHorizontalLineViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8EE2C25D229636D9001F639B /* EHHorizontalLineViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE2C254229636D9001F639B /* EHHorizontalLineViewCell.m */; };
 		8EE2C25E229636D9001F639B /* EHHorizontalViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE2C255229636D9001F639B /* EHHorizontalViewCell.m */; };
-		8EE2C25F229636D9001F639B /* EHHorizontalSelectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EE2C256229636D9001F639B /* EHHorizontalSelectionView.h */; };
-		8EE2C260229636D9001F639B /* EHRoundedHorizontalViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EE2C257229636D9001F639B /* EHRoundedHorizontalViewCell.h */; };
+		8EE2C25F229636D9001F639B /* EHHorizontalSelectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EE2C256229636D9001F639B /* EHHorizontalSelectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EE2C260229636D9001F639B /* EHRoundedHorizontalViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EE2C257229636D9001F639B /* EHRoundedHorizontalViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8EE2C268229637D3001F639B /* UIColor+UIColorAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE2C262229637D3001F639B /* UIColor+UIColorAdditions.m */; };
-		8EE2C269229637D3001F639B /* CCARadialGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EE2C263229637D3001F639B /* CCARadialGradientLayer.h */; };
-		8EE2C26A229637D3001F639B /* UIColor+UIColorAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EE2C264229637D3001F639B /* UIColor+UIColorAdditions.h */; };
+		8EE2C269229637D3001F639B /* CCARadialGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EE2C263229637D3001F639B /* CCARadialGradientLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EE2C26A229637D3001F639B /* UIColor+UIColorAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EE2C264229637D3001F639B /* UIColor+UIColorAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8EE2C26B229637D3001F639B /* UIImage+UIImageAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE2C265229637D3001F639B /* UIImage+UIImageAdditions.m */; };
 		8EE2C26C229637D3001F639B /* CCARadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE2C266229637D3001F639B /* CCARadialGradientLayer.m */; };
-		8EE2C26D229637D3001F639B /* UIImage+UIImageAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EE2C267229637D3001F639B /* UIImage+UIImageAdditions.h */; };
+		8EE2C26D229637D3001F639B /* UIImage+UIImageAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EE2C267229637D3001F639B /* UIImage+UIImageAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8EE2C271229638CD001F639B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8EE2C270229638CC001F639B /* README.md */; };
+		8EE2C27D229688AC001F639B /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE2C27B229688AB001F639B /* Foundation+Log.m */; };
+		8EE2C27E229688AC001F639B /* Foundation+Log.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EE2C27C229688AB001F639B /* Foundation+Log.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		950DEE9967D9A381F91E3F34 /* Pods_ExampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FFF79F65B7EDEEC99571D36 /* Pods_ExampleUITests.framework */; };
 		AB1FE1270E6DF4A5EDBF7F45 /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D4074C99FD8F414398C018 /* Pods_Example.framework */; };
 /* End PBXBuildFile section */
@@ -1568,6 +1570,8 @@
 		8EE2C266229637D3001F639B /* CCARadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCARadialGradientLayer.m; sourceTree = "<group>"; };
 		8EE2C267229637D3001F639B /* UIImage+UIImageAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+UIImageAdditions.h"; sourceTree = "<group>"; };
 		8EE2C270229638CC001F639B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		8EE2C27B229688AB001F639B /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
+		8EE2C27C229688AB001F639B /* Foundation+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Foundation+Log.h"; sourceTree = "<group>"; };
 		9BBE7CD6FCCDBE905A4DA76F /* Pods-ExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleTests.release.xcconfig"; path = "Target Support Files/Pods-ExampleTests/Pods-ExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		AC31F1EE1F169C853D173476 /* Pods_ExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D20739CA46D3C945B844F924 /* Pods-ExampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleUITests.release.xcconfig"; path = "Target Support Files/Pods-ExampleUITests/Pods-ExampleUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -1708,6 +1712,8 @@
 		8EE2B5412295B5D8001F639B /* categories */ = {
 			isa = PBXGroup;
 			children = (
+				8EE2C27C229688AB001F639B /* Foundation+Log.h */,
+				8EE2C27B229688AB001F639B /* Foundation+Log.m */,
 				8EE2C23D2295C85B001F639B /* UIView+Base.h */,
 				8EE2C23C2295C85B001F639B /* UIView+Base.m */,
 				8EE2B5C22295BD9D001F639B /* NSArray+ArrayExtentsion.h */,
@@ -4371,18 +4377,22 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8EE2C2062295C04F001F639B /* SNHexColor.h in Headers */,
 				8EE2C25F229636D9001F639B /* EHHorizontalSelectionView.h in Headers */,
-				8EE2C1FC2295C04F001F639B /* SNMacro.h in Headers */,
 				8EE2C25C229636D9001F639B /* EHHorizontalLineViewCell.h in Headers */,
+				8EE2C260229636D9001F639B /* EHRoundedHorizontalViewCell.h in Headers */,
+				8EE2C269229637D3001F639B /* CCARadialGradientLayer.h in Headers */,
+				8EE2C25B229636D9001F639B /* EHHorizontalViewCell.h in Headers */,
+				8EE2C27E229688AC001F639B /* Foundation+Log.h in Headers */,
+				8EE2C26A229637D3001F639B /* UIColor+UIColorAdditions.h in Headers */,
+				8EE2C26D229637D3001F639B /* UIImage+UIImageAdditions.h in Headers */,
+				8EE2C2062295C04F001F639B /* SNHexColor.h in Headers */,
+				8EE2C1FC2295C04F001F639B /* SNMacro.h in Headers */,
 				8EE2C2032295C04F001F639B /* SNColorBoard.h in Headers */,
 				8EE2C2002295C04F001F639B /* SN.h in Headers */,
 				8EE2C1FD2295C04F001F639B /* SNGlobalFunctions.h in Headers */,
 				8EE2C1F72295C04F001F639B /* SNConst.h in Headers */,
 				8EE2C2022295C04F001F639B /* SNLog.h in Headers */,
 				8EE2C2012295C04F001F639B /* SNHTTPManager.h in Headers */,
-				8EE2C260229636D9001F639B /* EHRoundedHorizontalViewCell.h in Headers */,
-				8EE2C269229637D3001F639B /* CCARadialGradientLayer.h in Headers */,
 				8EE2C2042295C04F001F639B /* SNInit.h in Headers */,
 				8EE2C1FB2295C04F001F639B /* SNRegex.h in Headers */,
 				8EE2C1D62295C007001F639B /* SNLabel.h in Headers */,
@@ -4395,15 +4405,12 @@
 				8EE2C1DB2295C007001F639B /* SNTableView.h in Headers */,
 				8EE2B5D82295BD9E001F639B /* NSArray+ArrayExtentsion.h in Headers */,
 				8EE2B5E02295BD9E001F639B /* NSString+StringExtension.h in Headers */,
-				8EE2C25B229636D9001F639B /* EHHorizontalViewCell.h in Headers */,
 				8EE2B5D72295BD9E001F639B /* NSString+Hash.h in Headers */,
 				8EE2B5E42295BD9E001F639B /* NSMutableArray+ArrayExtentsion.h in Headers */,
 				8EE2B5D62295BD9E001F639B /* UINavigationBar+NavgationBarExtension.h in Headers */,
-				8EE2C26A229637D3001F639B /* UIColor+UIColorAdditions.h in Headers */,
 				8EE2B5DA2295BD9E001F639B /* NSArray+ES6.h in Headers */,
 				8EE2B5E92295BD9E001F639B /* NSDate+Time.h in Headers */,
 				8EE2B5E82295BD9E001F639B /* UIView+Common.h in Headers */,
-				8EE2C26D229637D3001F639B /* UIImage+UIImageAdditions.h in Headers */,
 				8EE2B5E52295BD9E001F639B /* UIColor+ColorExtension.h in Headers */,
 				8EE2C2432295C94D001F639B /* SNTemplate.h in Headers */,
 				8EE2B5D52295BD9E001F639B /* NSString+YYAdd.h in Headers */,
@@ -4825,6 +4832,7 @@
 				8EE2C1DA2295C007001F639B /* SNImageView.m in Sources */,
 				8EE2B5DE2295BD9E001F639B /* NSArray+ArrayExtentsion.m in Sources */,
 				8EE2B5DC2295BD9E001F639B /* NSArray+ES6.m in Sources */,
+				8EE2C27D229688AC001F639B /* Foundation+Log.m in Sources */,
 				8EE2C23A2295C767001F639B /* SNTextField.m in Sources */,
 				8EE2C1DD2295C007001F639B /* SNLabel.m in Sources */,
 				8EE2B5DD2295BD9E001F639B /* NSMutableArray+ArrayExtentsion.m in Sources */,

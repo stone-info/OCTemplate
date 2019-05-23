@@ -15,7 +15,8 @@ BOOL kAutoPush = YES;
 + (void)initialize {
   static dispatch_once_t onceToken;
   dispatch_once(&onceToken, ^{
-                });
+
+  });
 }
 
 @end
