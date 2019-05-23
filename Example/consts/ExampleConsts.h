@@ -1,5 +1,5 @@
 //
-//  OCTemplateConsts.h
+//  ExampleConsts.h
 //  Example
 //
 //  Created by stone on 2019/5/23.
@@ -12,7 +12,7 @@ UIKIT_EXTERN BOOL    kAutoPush;
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface OCTemplateConsts : NSObject
+@interface ExampleConsts : NSObject
 
 @end
 
