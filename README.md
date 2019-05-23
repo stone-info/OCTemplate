@@ -11,7 +11,7 @@ target 'SNTest' do
   # use_frameworks!
   # pod 'SNFramework', :git => 'https://github.com/stone-info/OCTemplate.git'
   # Pods for SNTest
-  pod 'OCTemplate', :git => 'https://github.com/stone-info/OCTemplate.git'
+  pod 'OCTemplate', :git => 'https://github.com/stone-info/OCTemplate.git',:tag => '0.0.5'
 end
 ```
 

@@ -89,12 +89,16 @@ spec.version = "0.0.5"
   #  Not including the public_header_files will make all headers public.
   #
 
+  # 11111111111111111111111111111111111111111111111111111111111
   # spec.source_files  = "OCTemplate", "OCTemplate/**/*.{h,m}"
   # # spec.exclude_files = "Classes/Exclude"
   # spec.public_header_files = "OCTemplate/**/*.h"
   # spec.resource_bundles = {
   #   'OCTemplate' => ['OCTemplate/**/*.xib']
   # }
+
+
+  # 22222222222222222222222222222222222222222222222222222222222
   spec.public_header_files = 'OCTemplate/OCTemplate.h'
   spec.source_files = 'OCTemplate/OCTemplate.h'
   spec.resource_bundles = {
