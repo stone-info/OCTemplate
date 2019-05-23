@@ -579,6 +579,7 @@
 		8EE2C2A122973B6D001F639B /* NSData+CustomPadding.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE2C29922973B6C001F639B /* NSData+CustomPadding.m */; };
 		8EE2C2A222973B6D001F639B /* NSData+CommomCryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EE2C29A22973B6C001F639B /* NSData+CommomCryptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8EE2C2A322973B6D001F639B /* NSData+Digest.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EE2C29B22973B6C001F639B /* NSData+Digest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EE2C2A622974E61001F639B /* publish.sh in Resources */ = {isa = PBXBuildFile; fileRef = 8EE2C2A522974E61001F639B /* publish.sh */; };
 		950DEE9967D9A381F91E3F34 /* Pods_ExampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FFF79F65B7EDEEC99571D36 /* Pods_ExampleUITests.framework */; };
 		AB1FE1270E6DF4A5EDBF7F45 /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D4074C99FD8F414398C018 /* Pods_Example.framework */; };
 /* End PBXBuildFile section */
@@ -1584,6 +1585,7 @@
 		8EE2C29A22973B6C001F639B /* NSData+CommomCryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+CommomCryptor.h"; sourceTree = "<group>"; };
 		8EE2C29B22973B6C001F639B /* NSData+Digest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Digest.h"; sourceTree = "<group>"; };
 		8EE2C2A422974B95001F639B /* OCTemplate.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = OCTemplate.podspec; sourceTree = "<group>"; };
+		8EE2C2A522974E61001F639B /* publish.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = publish.sh; sourceTree = "<group>"; };
 		9BBE7CD6FCCDBE905A4DA76F /* Pods-ExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleTests.release.xcconfig"; path = "Target Support Files/Pods-ExampleTests/Pods-ExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		AC31F1EE1F169C853D173476 /* Pods_ExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D20739CA46D3C945B844F924 /* Pods-ExampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleUITests.release.xcconfig"; path = "Target Support Files/Pods-ExampleUITests/Pods-ExampleUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -1699,6 +1701,7 @@
 				8EE2B51F2295B40B001F639B /* Info.plist */,
 				8EE2B5202295B40B001F639B /* main.m */,
 				8EE2B5AF2295B9DF001F639B /* SNPrefix.pch */,
+				8EE2C2A522974E61001F639B /* publish.sh */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -4590,6 +4593,7 @@
 				8EE2C11E2295BF80001F639B /* users.json in Resources */,
 				8EE2C0CE2295BF7F001F639B /* PersonModel.value in Resources */,
 				8EE2BF702295BF3F001F639B /* wine.plist in Resources */,
+				8EE2C2A622974E61001F639B /* publish.sh in Resources */,
 				8EE2BF922295BF3F001F639B /* ScrollViewHorizontalLayoutWithXibViewController.xib in Resources */,
 				8EE2C0EF2295BF7F001F639B /* NibSelfSizingCell.xib in Resources */,
 				8EE2BE9C2295BF3F001F639B /* T011ViewController.xib in Resources */,
