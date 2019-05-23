@@ -7,7 +7,7 @@
 //
 #import "StoneViewController.h"
 #import <IGListKit/IGListKit.h>
-#import "OCTemplateConsts.h"
+#import "ExampleConsts.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface StoneViewModel : NSObject <IGListDiffable>

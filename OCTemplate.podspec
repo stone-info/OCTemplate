@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "OCTemplate"
-  spec.version      = "0.0.1"
+spec.version = "0.0.39"
   spec.summary      = "A short description of OCTemplate."
 
   # This description is used to generate tags and improve search results.

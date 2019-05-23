@@ -7,7 +7,7 @@
 //
 
 #import "LRQViewController.h"
-#import "OCTemplateConsts.h"
+#import "ExampleConsts.h"
 @interface LRQViewController () <UITableViewDelegate, UITableViewDataSource>
 /** tableView */
 @property (nonatomic, weak) UITableView                                       *tableView;

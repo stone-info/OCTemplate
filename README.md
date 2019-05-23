@@ -52,6 +52,8 @@ pod lib lint
 pod spec lint
 ```
 
+
+
 - 更新podspec文件到远程仓库
 ```bash
 git add PrivatePodTest.podspec

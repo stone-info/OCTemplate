@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "OCTemplateConsts.h"
+#import "ExampleConsts.h"
 #import "SNTabBarController.h"
 #import "SNWindow.h"
 
