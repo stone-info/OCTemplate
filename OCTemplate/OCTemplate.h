@@ -62,8 +62,6 @@ FOUNDATION_EXPORT const unsigned char OCTemplateVersionString[];
 #import <OCTemplate/SNTableView.h>
 #import <OCTemplate/SNPageControl.h>
 #import <OCTemplate/SNImageView.h>
-#import <OCTemplate/UIView+Common.h>
-#import <OCTemplate/UIView+Base.h>
 #import <OCTemplate/SNHexColor.h>
 #import <OCTemplate/SNTemplate.h>
 
@@ -84,3 +82,6 @@ FOUNDATION_EXPORT const unsigned char OCTemplateVersionString[];
 #import <OCTemplate/NSString+StringExtension.h>
 #import <OCTemplate/NSData+CommomCryptor.h>
 #import <OCTemplate/NSData+CustomPadding.h>
+#import <OCTemplate/NSDate+Time.h>
+#import <OCTemplate/UIView+Common.h>
+#import <OCTemplate/UIView+Base.h>

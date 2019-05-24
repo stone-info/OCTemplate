@@ -19,11 +19,11 @@
 
 cd ..
 
-git add .
+git add --all
 git commit -m "update podspec ${1}"
 git push
 
-git add .
+git add --all
 git commit -m "update repo ${1}"
 git tag "$1"
 git push --tags
