@@ -8,6 +8,14 @@
 
 #import "T084ViewController.h"
 
+@interface T084Person : NSObject
+@property(nonatomic, copy) void (^block)(NSInteger tag);
+@end
+
+@implementation T084Person
+@end
+
+//sn_note:=========  ============================ stone 🐳 ===========/
 @interface  T084ViewController ()
 
 @end
@@ -17,17 +25,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+
+  T084Person *person = T084Person.new;
+    
+    
+  @weakify(person)
+  [person setBlock:^(NSInteger tag){
+    @strongify(person);
+
+    person.selected = YES;
+    person.selected = YES;
+  }];
+
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
     
