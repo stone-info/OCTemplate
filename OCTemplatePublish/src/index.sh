@@ -20,13 +20,13 @@
 cd ..
 
 git add .
-git commit -m "update repo ${1}"
+git commit -m "update podspec ${1}"
+git push
+
+#git add .
+#git commit -m "update repo ${1}"
 git tag "$1"
 git push --tags
 
 #git status
 #echo $1
-
-git add .
-git commit -m "update podspec ${1}"
-git push
