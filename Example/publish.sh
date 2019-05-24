@@ -2,4 +2,4 @@
 
 cd ../OCTemplatePublish/src
 
-node publish.js
+node ./publish.js

@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "OCTemplate"
-spec.version = "0.0.7"
+spec.version = "0.0.9"
   spec.summary      = "A short description of OCTemplate."
 
   # This description is used to generate tags and improve search results.
@@ -184,8 +184,10 @@ spec.version = "0.0.7"
   # IQKeyboardManager
   spec.dependency 'IQKeyboardManager', '~> 6.3.0'
 
+  spec.dependency 'SDWebImage/GIF', '4.4.3'
+
   # SDCycleScrollView
-  spec.dependency 'SDCycleScrollView', '~> 1.80'
+  spec.dependency 'SDCycleScrollView', '~> 1.75'
 
   # KVOController
   spec.dependency 'KVOController', '~> 1.2.0'
