@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "OCTemplate"
-spec.version = "0.0.12"
+spec.version = "0.0.13"
   spec.summary      = "A short description of OCTemplate."
 
   # This description is used to generate tags and improve search results.
@@ -168,7 +168,7 @@ spec.version = "0.0.12"
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
-  # spec.dependency 'SDWebImage', '~> 4.4.6'
+  spec.dependency 'SDWebImage', '~> 4.4.3'
   spec.dependency 'MJExtension', '~> 3.0.17'
   spec.dependency 'MJRefresh', '~> 3.2.0'
   spec.dependency 'Masonry', '~> 1.1.0'
@@ -184,10 +184,10 @@ spec.version = "0.0.12"
   # IQKeyboardManager
   spec.dependency 'IQKeyboardManager', '~> 6.3.0'
 
-  spec.dependency 'SDWebImage/GIF', '4.4.3'
+  # spec.dependency 'SDWebImage/GIF', '4.4.3'
 
   # SDCycleScrollView
-  spec.dependency 'SDCycleScrollView', '~> 1.75'
+  # spec.dependency 'SDCycleScrollView', '~> 1.75'
 
   # KVOController
   spec.dependency 'KVOController', '~> 1.2.0'

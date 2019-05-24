@@ -21,9 +21,9 @@ target 'OCTemplate' do
   pod 'IQKeyboardManager', '~> 6.3.0'
   
   # SDCycleScrollView 5.0.0 SD 好像少了方法, 带修复
-  pod 'SDWebImage/GIF', '4.4.3'
+  pod 'SDWebImage', '4.4.3'
   # SDCycleScrollView
-  pod 'SDCycleScrollView', '~> 1.75'
+  # pod 'SDCycleScrollView', '~> 1.75'
   
   pod 'KVOController', '~> 1.2.0'
   
@@ -48,9 +48,9 @@ target 'Example' do
   # IQKeyboardManager
   pod 'IQKeyboardManager', '~> 6.3.0'
 
-  pod 'SDWebImage/GIF', '4.4.3'
+  pod 'SDWebImage', '4.4.3'
   # SDCycleScrollView
-  pod 'SDCycleScrollView', '~> 1.75'
+  # pod 'SDCycleScrollView', '~> 1.75'
   
   pod 'KVOController', '~> 1.2.0'
   
