@@ -85,3 +85,4 @@ FOUNDATION_EXPORT const unsigned char OCTemplateVersionString[];
 #import <OCTemplate/NSDate+Time.h>
 #import <OCTemplate/UIView+Common.h>
 #import <OCTemplate/UIView+Base.h>
+#import <OCTemplate/RegExCategories.h>

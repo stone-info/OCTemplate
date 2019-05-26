@@ -579,6 +579,8 @@
 		8EE2C2A122973B6D001F639B /* NSData+CustomPadding.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE2C29922973B6C001F639B /* NSData+CustomPadding.m */; };
 		8EE2C2A222973B6D001F639B /* NSData+CommomCryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EE2C29A22973B6C001F639B /* NSData+CommomCryptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8EE2C2A322973B6D001F639B /* NSData+Digest.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EE2C29B22973B6C001F639B /* NSData+Digest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EEF272B229AB2B800F6975A /* RegExCategories.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EEF2729229AB2B800F6975A /* RegExCategories.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EEF272C229AB2B800F6975A /* RegExCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EEF272A229AB2B800F6975A /* RegExCategories.m */; };
 		950DEE9967D9A381F91E3F34 /* Pods_ExampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FFF79F65B7EDEEC99571D36 /* Pods_ExampleUITests.framework */; };
 		AB1FE1270E6DF4A5EDBF7F45 /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D4074C99FD8F414398C018 /* Pods_Example.framework */; };
 /* End PBXBuildFile section */
@@ -1585,6 +1587,8 @@
 		8EE2C29B22973B6C001F639B /* NSData+Digest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Digest.h"; sourceTree = "<group>"; };
 		8EE2C2A422974B95001F639B /* OCTemplate.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = OCTemplate.podspec; sourceTree = "<group>"; };
 		8EEF26E2229962F700F6975A /* YJApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJApi.h; sourceTree = "<group>"; };
+		8EEF2729229AB2B800F6975A /* RegExCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegExCategories.h; sourceTree = "<group>"; };
+		8EEF272A229AB2B800F6975A /* RegExCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegExCategories.m; sourceTree = "<group>"; };
 		9BBE7CD6FCCDBE905A4DA76F /* Pods-ExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleTests.release.xcconfig"; path = "Target Support Files/Pods-ExampleTests/Pods-ExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		AC31F1EE1F169C853D173476 /* Pods_ExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D20739CA46D3C945B844F924 /* Pods-ExampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleUITests.release.xcconfig"; path = "Target Support Files/Pods-ExampleUITests/Pods-ExampleUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -4336,6 +4340,7 @@
 		8EE2C24C229636BB001F639B /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				8EEF2728229AB29D00F6975A /* Regex */,
 				8EE2C261229637B6001F639B /* Common */,
 				8EE2C24D229636D9001F639B /* EHHorizontalSelectionView */,
 			);
@@ -4379,6 +4384,15 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
+		8EEF2728229AB29D00F6975A /* Regex */ = {
+			isa = PBXGroup;
+			children = (
+				8EEF2729229AB2B800F6975A /* RegExCategories.h */,
+				8EEF272A229AB2B800F6975A /* RegExCategories.m */,
+			);
+			path = Regex;
+			sourceTree = "<group>";
+		};
 		CAFF20766F661DB34C7B487C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -4397,6 +4411,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EEF272B229AB2B800F6975A /* RegExCategories.h in Headers */,
 				8EE2C29E22973B6D001F639B /* NSData+HMAC.h in Headers */,
 				8EE2C2A222973B6D001F639B /* NSData+CommomCryptor.h in Headers */,
 				8EE2C2A022973B6D001F639B /* NSData+CustomPadding.h in Headers */,
@@ -4847,6 +4862,7 @@
 				8EE2C1F82295C04F001F639B /* SNInit.m in Sources */,
 				8EE2B5DF2295BD9E001F639B /* NSString+Hash.m in Sources */,
 				8EE2C2072295C04F001F639B /* SN.m in Sources */,
+				8EEF272C229AB2B800F6975A /* RegExCategories.m in Sources */,
 				8EE2C2052295C04F001F639B /* SNHTTPManager.m in Sources */,
 				8EE2B5D42295BD9E001F639B /* UIView+Common.m in Sources */,
 				8EE2C24B22961F29001F639B /* SNPageControl.m in Sources */,
