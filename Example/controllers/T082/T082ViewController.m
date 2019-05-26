@@ -52,9 +52,9 @@
   NSArray *controllers = @[t082Test00SectionController];
 
   // 不使用协议 , 代替代理 , 真球方便...
-  [[t082Test00SectionController rac_signalForSelector:@selector(hello:)] subscribeNext:^(RACTuple *x) {
-    NSLog(@"x class = %@ | x = %@", SN.getClassName(x), x);
-  }];
+//  [[t082Test00SectionController rac_signalForSelector:@selector(hello:)] subscribeNext:^(RACTuple *x) {
+//    NSLog(@"x class = %@ | x = %@", SN.getClassName(x), x);
+//  }];
 
   IGListStackedSectionController *sectionController = [IGListStackedSectionController.alloc initWithSectionControllers:controllers];
   sectionController.inset = UIEdgeInsetsMake(0, 0, 0, 0);

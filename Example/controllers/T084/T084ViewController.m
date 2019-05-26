@@ -26,17 +26,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 
-  T084Person *person = T084Person.new;
-    
-    
-  @weakify(person)
-  [person setBlock:^(NSInteger tag){
-    @strongify(person);
-
-    person.selected = YES;
-    person.selected = YES;
-  }];
-
 }
 
 

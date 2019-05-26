@@ -26,6 +26,12 @@ static NSArray *testList;
 
 @implementation T082Test00SectionController
 
+- (void)dealloc {
+  NSLog(@"■■■■■■\t%@ is dead ☠☠☠\t■■■■■■", [self class]);
+
+  [_disposable dispose];
+}
+
 - (instancetype)init {
   self = [super init];
   if (self) {
@@ -78,22 +84,27 @@ static NSArray *testList;
     RACScheduler        *scheduler       = [RACScheduler mainThreadScheduler]; // [RACScheduler scheduler]
     RACSignal<NSDate *> *schedulerSignal = [RACSignal interval:1.0 onScheduler:scheduler];
 
+    //    @weakify(self)
+    //    RACDisposable       *disposable      = [[schedulerSignal takeUntil:subject] subscribeNext:^(NSDate *date) {
+    //      @strongify(self)
+    //      [self hello:@"hello"];
+    //
+    //      NSLog(@"date = %@", date);
+    //      NSLog(@"[NSThread currentThread] = %@", [NSThread currentThread]);
+    //    }];
+
     @weakify(self)
-    RACDisposable       *disposable      = [[schedulerSignal takeUntil:subject] subscribeNext:^(NSDate *date) {
+    RACDisposable       *disposable      = [schedulerSignal subscribeNext:^(NSDate *date) {
       @strongify(self)
       [self hello:@"hello"];
 
       NSLog(@"date = %@", date);
       NSLog(@"[NSThread currentThread] = %@", [NSThread currentThread]);
     }];
+
     // 取消定时器的时候用的
     _disposable = disposable;
     // [_disposable dispose];
-
-
-
-
-
     //strong_tableView
   }
 
@@ -338,7 +349,7 @@ static NSArray *testList;
 
 // RACSequence : 用于代替NSArray , NSDictionary 可以使用快速的遍历, 注意是 , NSArray 不是 NSMutableArray
 - (void)entry5 {
-//  kToast(nil, kStringFormat(@"%s", __func__));
+  //  kToast(nil, kStringFormat(@"%s", __func__));
 
   [@[@1, @"1", @"一"].rac_sequence.signal subscribeNext:^(id x) {
     NSLog(@"x class = %@ | x = %@", SN.getClassName(x), x);
@@ -426,3 +437,4 @@ static NSArray *testList;
 @end
 
 #pragma clang diagnostic pop
+

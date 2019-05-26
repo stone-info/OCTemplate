@@ -1584,6 +1584,7 @@
 		8EE2C29A22973B6C001F639B /* NSData+CommomCryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+CommomCryptor.h"; sourceTree = "<group>"; };
 		8EE2C29B22973B6C001F639B /* NSData+Digest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Digest.h"; sourceTree = "<group>"; };
 		8EE2C2A422974B95001F639B /* OCTemplate.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = OCTemplate.podspec; sourceTree = "<group>"; };
+		8EEF26E2229962F700F6975A /* YJApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJApi.h; sourceTree = "<group>"; };
 		9BBE7CD6FCCDBE905A4DA76F /* Pods-ExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleTests.release.xcconfig"; path = "Target Support Files/Pods-ExampleTests/Pods-ExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		AC31F1EE1F169C853D173476 /* Pods_ExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D20739CA46D3C945B844F924 /* Pods-ExampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleUITests.release.xcconfig"; path = "Target Support Files/Pods-ExampleUITests/Pods-ExampleUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -2310,10 +2311,10 @@
 			isa = PBXGroup;
 			children = (
 				8EE2BC672295BF31001F639B /* ViewModel */,
-				8EE2BC6A2295BF31001F639B /* T082ViewController.m */,
 				8EE2BC6B2295BF31001F639B /* View */,
 				8EE2BC702295BF31001F639B /* SectionController */,
 				8EE2BC732295BF31001F639B /* T082ViewController.h */,
+				8EE2BC6A2295BF31001F639B /* T082ViewController.m */,
 			);
 			path = T082;
 			sourceTree = "<group>";
@@ -2570,6 +2571,7 @@
 		8EE2BCDD2295BF34001F639B /* T083 */ = {
 			isa = PBXGroup;
 			children = (
+				8EEF26E2229962F700F6975A /* YJApi.h */,
 				8EE2BCDE2295BF34001F639B /* T083ViewController.m */,
 				8EE2BCDF2295BF34001F639B /* T083ViewController.h */,
 			);

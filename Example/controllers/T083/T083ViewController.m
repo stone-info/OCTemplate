@@ -8,12 +8,14 @@
 
 #import <CommonCrypto/CommonCrypto.h>
 #import "T083ViewController.h"
-
+#import "YJApi.h"
 // NSString *const kInitVector = @"ffGGtsdfzxCv5568";
-NSString *const kInitVector = @"1234567890123456";
+// NSString *const kInitVector = @"1234567890123456";
+NSString *const kInitVector = @"xiangmuming";
 
 // NSString *const DESKey = @"gg356tt8g5h6j9jh";
-NSString *const DESKey = @"1234567890123456";
+// NSString *const DESKey = @"1234567890123456";
+NSString *const DESKey = @"xiangmuming";
 
 NSString *const source = @"12345";
 
@@ -27,19 +29,53 @@ NSString *const source = @"12345";
   [super viewDidLoad];
   // Do any additional setup after loading the view from its nib.
 
-  NSString *key = @"1234567890123456";
-  NSString *iv = @"1234567890123456";
-  NSString *source = @"你好吗";
+
+  // NSString *key = @"xiangmuming";
+  // NSString *iv = @"xiangmuming";
+  // NSString *source = @"api/share/follower/list"; // @"V2V4tSpAtDKx11dvmM5++MTP7UIEvuGb"
+
+  // {
+  //   NSData *sourceData = [@"api/share/follower/list" dataUsingEncoding:NSUTF8StringEncoding];
+  //
+  //   NSData *ansix923Data = [sourceData cc_encryptUsingAlgorithm:CcCryptoAlgorithmDES key:key InitializationVector:iv Mode:CcCryptorCBCMode Padding:CcCryptorANSIX923];
+  //
+  //   NSString *ansix923String = [ansix923Data base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];
+  //
+  //   NSLog(@"%@",ansix923String);
+  //
+  //   NSData *decryptAnsix923Data = [ansix923Data cc_decryptUsingAlgorithm:CcCryptoAlgorithmDES key:key InitializationVector:iv Mode:CcCryptorCBCMode Padding:CcCryptorANSIX923];
+  //   NSString *decryptString = [[NSString alloc] initWithData:decryptAnsix923Data  encoding:NSUTF8StringEncoding];
+  //   NSLog(@"decryptString = %@", decryptString);
+  // }
+  //
+  // {
+  //   NSString *source = kApiShareFollowerList; // @"3EmwM2qxrWS/9cS48MKz5O9QAMf970lW"
+  //   NSData *sourceData = [source dataUsingEncoding:NSUTF8StringEncoding];
+  //   NSData *decryptAnsix923Data = [sourceData cc_decryptUsingAlgorithm:CcCryptoAlgorithmDES key:key InitializationVector:iv Mode:CcCryptorCBCMode Padding:CcCryptorANSIX923];
+  //   NSString *decryptString = [[NSString alloc] initWithData:decryptAnsix923Data  encoding:NSUTF8StringEncoding];
+  //   NSLog(@"decryptString = %@", decryptString);
+  // }
+
+  [self demo2];
+
+}
+
+- (void)demo2 {
+  NSString *key = @"xiangmuming";
+  NSString *iv = @"xiangmuming";
+  NSString *source = @"http://api.duobaobuluo.com/htmmall/page/sys/csagrt.html"; // @"V2V4tSpAtDKx11dvmM5++MTP7UIEvuGb"
 
   //String -> Data
   NSData *sourceData = [source dataUsingEncoding:NSUTF8StringEncoding];
   // Data -> AESEncrypt
-  NSData *ansix923Data = [sourceData cc_encryptUsingAlgorithm:CcCryptoAlgorithmDES key:key InitializationVector:iv Mode:CcCryptorCBCMode Padding:CcCryptorANSIX923];
+  NSData *ansix923Data = [sourceData cc_encryptUsingAlgorithm:CcCryptoAlgorithmAES key:key InitializationVector:iv Mode:CcCryptorCBCMode Padding:CcCryptorANSIX923];
+
   NSString *ansix923String = [ansix923Data base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];
+
   NSLog(@"%@",ansix923String);
 
   // Data -> AESDecrypt
-  NSData *decryptAnsix923Data = [ansix923Data cc_decryptUsingAlgorithm:CcCryptoAlgorithmDES key:key InitializationVector:iv Mode:CcCryptorCBCMode Padding:CcCryptorANSIX923];
+  NSData *decryptAnsix923Data = [ansix923Data cc_decryptUsingAlgorithm:CcCryptoAlgorithmAES key:key InitializationVector:iv Mode:CcCryptorCBCMode Padding:CcCryptorANSIX923];
   NSString *decryptString = [[NSString alloc] initWithData:decryptAnsix923Data  encoding:NSUTF8StringEncoding];
   NSLog(@"%@",decryptString);
 }

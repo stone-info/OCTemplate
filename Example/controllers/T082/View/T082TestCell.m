@@ -58,11 +58,13 @@
 
   [self.viewModel.subject subscribeNext:^(id x) {
     NSLog(@"x class = %@ | x = %@", [x valueForKeyPath:@"isa"], x);
-//    kToast(nil, kStringFormat(@"x = %@", x));
+    //    kToast(nil, kStringFormat(@"x = %@", x));
     kStringFormat(@"x = %@", x);
   }];
 
+  @weakify_self
   [[self.button rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl *x) {
+    @strongify_self
     [self.viewModel.subject sendNext:@"hello world"];
   }];
 
@@ -70,7 +72,6 @@
 
 - (void)layoutSubviews {
   [super layoutSubviews];
-
 }
 
 @end
