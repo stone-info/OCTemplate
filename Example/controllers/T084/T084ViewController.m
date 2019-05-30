@@ -9,7 +9,6 @@
 #import "T084ViewController.h"
 
 @interface T084Person : NSObject
-@property(nonatomic, copy) void (^block)(NSInteger tag);
 @end
 
 @implementation T084Person
@@ -20,14 +19,20 @@
 
 @end
 
-@implementation  T084ViewController
+@implementation T084ViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+  [super viewDidLoad];
+  // Do any additional setup after loading the view from its nib.
+  Rx* rx = RX(@"\\d");
+  // Rx* rx = [Rx rx:@"\\d"];
+  // Rx* rx = [Rx rx:@"\\d" ignoreCase:YES];
 
+  //Test if a string matches
+  BOOL isMatch = [@"2345" isMatch:RX(@"^\\d+$")];
+
+  NSLog(@"isMatch = %d", isMatch);
 }
-
 
 
 @end

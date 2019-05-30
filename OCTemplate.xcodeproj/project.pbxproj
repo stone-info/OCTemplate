@@ -581,6 +581,7 @@
 		8EE2C2A322973B6D001F639B /* NSData+Digest.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EE2C29B22973B6C001F639B /* NSData+Digest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8EEF272B229AB2B800F6975A /* RegExCategories.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EEF2729229AB2B800F6975A /* RegExCategories.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8EEF272C229AB2B800F6975A /* RegExCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EEF272A229AB2B800F6975A /* RegExCategories.m */; };
+		8EEF272E229AB40200F6975A /* RegexApi.md in Resources */ = {isa = PBXBuildFile; fileRef = 8EEF272D229AB40200F6975A /* RegexApi.md */; };
 		950DEE9967D9A381F91E3F34 /* Pods_ExampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FFF79F65B7EDEEC99571D36 /* Pods_ExampleUITests.framework */; };
 		AB1FE1270E6DF4A5EDBF7F45 /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D4074C99FD8F414398C018 /* Pods_Example.framework */; };
 /* End PBXBuildFile section */
@@ -1589,6 +1590,7 @@
 		8EEF26E2229962F700F6975A /* YJApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJApi.h; sourceTree = "<group>"; };
 		8EEF2729229AB2B800F6975A /* RegExCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegExCategories.h; sourceTree = "<group>"; };
 		8EEF272A229AB2B800F6975A /* RegExCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegExCategories.m; sourceTree = "<group>"; };
+		8EEF272D229AB40200F6975A /* RegexApi.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = RegexApi.md; sourceTree = "<group>"; };
 		9BBE7CD6FCCDBE905A4DA76F /* Pods-ExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleTests.release.xcconfig"; path = "Target Support Files/Pods-ExampleTests/Pods-ExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		AC31F1EE1F169C853D173476 /* Pods_ExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D20739CA46D3C945B844F924 /* Pods-ExampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleUITests.release.xcconfig"; path = "Target Support Files/Pods-ExampleUITests/Pods-ExampleUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -2357,6 +2359,7 @@
 			children = (
 				8EE2BC752295BF31001F639B /* T084ViewController.m */,
 				8EE2BC762295BF31001F639B /* T084ViewController.h */,
+				8EEF272D229AB40200F6975A /* RegexApi.md */,
 			);
 			path = T084;
 			sourceTree = "<group>";
@@ -4643,6 +4646,7 @@
 				8EE2BE972295BF3F001F639B /* T028ViewController.xib in Resources */,
 				8EE2C1A92295BFAF001F639B /* lrq_data.plist in Resources */,
 				8EE2BE7A2295BF3F001F639B /* onepiece_kiudai.png in Resources */,
+				8EEF272E229AB40200F6975A /* RegexApi.md in Resources */,
 				8EE2BF0C2295BF3F001F639B /* 5.png in Resources */,
 				8EE2C0E82295BF7F001F639B /* DiffTableViewCell.xib in Resources */,
 				8EE2BE8A2295BF3F001F639B /* T071UserCell.xib in Resources */,

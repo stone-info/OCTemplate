@@ -1,5 +1,13 @@
 # OCTemplate
 
+## publish
+```bash
+cd $HOME/git_repository/OCTemplate/OCTemplatePublish/src
+node ./publish.js
+```
+
+---
+
 ## 每次OCTemplate有改动 , 其他使用这个库的项目 都得 先删除 再重新install, 蛋疼...
 ## 如果使用 tag 管理, 只要切换版本就可以, 给力...
 ```ruby
