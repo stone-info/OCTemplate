@@ -114,7 +114,7 @@ kDecode
 
 - (void)demo2 {
 
-  NSLog(@"%@", kStringFormat(@"open %@", sn.pathJoin(kLibrary, @"Preferences")));
+  NSLog(@"%@", kStringFormat(@"open %@", pathJoin(kLibrary, @"Preferences")));
   // NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
   // [defaults setObject:@{@"username": @"stone"} forKey:@"user-info"];
   // [defaults synchronize]; // 遗弃的方法

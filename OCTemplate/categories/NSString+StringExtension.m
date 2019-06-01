@@ -16,9 +16,9 @@
   CGSize  maxSize    = CGSizeMake(maxWidth, MAXFLOAT);
   // 计算文字的高度
   CGFloat textHeight = [self boundingRectWithSize:maxSize
-                                          options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading
-                                       attributes:@{NSFontAttributeName: font}
-                                          context:nil].size.height;
+                             options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading
+                             attributes:@{NSFontAttributeName: font}
+                             context:nil].size.height;
   return textHeight;
 }
 @end
@@ -80,16 +80,15 @@
 
 @end
 
-
 @implementation NSString (YCI)
 
-+ (NSString *)JoinedWithSubStrings:(NSString *)firstStr,...NS_REQUIRES_NIL_TERMINATION{
++ (NSString *)JoinedWithSubStrings:(NSString *)firstStr, ...NS_REQUIRES_NIL_TERMINATION {
 
   NSMutableArray *array = [NSMutableArray new];
 
   va_list args;
 
-  if(firstStr){
+  if (firstStr) {
 
     [array addObject:firstStr];
 
@@ -97,16 +96,37 @@
 
     id obj;
 
-    while ((obj = va_arg(args, NSString* ))) {
+    while ((obj = va_arg(args, NSString*))) {
       [array addObject:obj];
     }
 
     va_end(args);
   }
 
-
   return [array componentsJoinedByString:@""];
 
 }
 
+@end
+
+@implementation NSString (FileManager)
+
++ (NSString *)pathJoin:(NSString *)paths, ...NS_REQUIRES_NIL_TERMINATION {
+
+  NSString *resultPath = paths;
+
+  va_list args;
+
+  if (paths) {
+
+    va_start(args, paths);
+
+    NSString *path;
+
+    while ((path = va_arg(args, NSString*))) { resultPath = [resultPath stringByAppendingPathComponent:path]; }
+
+    va_end(args);
+  }
+  return resultPath;
+}
 @end

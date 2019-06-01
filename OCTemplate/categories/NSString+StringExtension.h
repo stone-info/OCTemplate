@@ -13,7 +13,7 @@
 /*
  * 计算字符串的高度
  */
-- (CGFloat)stringHeightWithMaxWidth:(CGFloat)maxWidth font:(UIFont*)font;
+- (CGFloat)stringHeightWithMaxWidth:(CGFloat)maxWidth font:(UIFont *)font;
 @end
 
 @interface NSString (SNAttributedString)
@@ -57,6 +57,12 @@
 
 @interface NSString (YCI)
 
-+ (NSString *)JoinedWithSubStrings:(NSString *)firstStr,...NS_REQUIRES_NIL_TERMINATION;
++ (NSString *)JoinedWithSubStrings:(NSString *)firstStr, ...NS_REQUIRES_NIL_TERMINATION;
+
+@end
+
+@interface NSString (FileManager)
+
++ (NSString *)pathJoin:(NSString *)paths, ...NS_REQUIRES_NIL_TERMINATION;
 
 @end

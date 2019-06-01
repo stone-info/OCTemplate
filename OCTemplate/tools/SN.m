@@ -622,12 +622,6 @@ void setInterval(id target, void (^handler)(dispatch_source_t timer), uint64_t t
   };
 }
 
-+ (NSString *(^)(NSString *, NSString *))pathJoin {
-  return ^NSString *(NSString *path, NSString *file) {
-    return [path stringByAppendingPathComponent:file];
-  };
-}
-
 + (void (^)(__nullable id, NSString *))writeToPreferences {
   return ^void(__nullable id obj, NSString *key) {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
@@ -1299,6 +1293,97 @@ static CFStringRef FileMD5HashCreateWithPath(CFStringRef filePath, size_t chunkS
       return NO;
     }
 
+  };
+}
+
+
+
+//____________2019-06-01___file manager ______________________________________________▲△__.
+
++ (BOOL (^)(NSString *, NSString *))pWriteTextFile {
+  return ^BOOL(NSString *filepath, NSString *content) {
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    return [fileManager createFileAtPath:filepath contents:[content dataUsingEncoding:NSUTF8StringEncoding] attributes:nil];
+  };
+}
+
++ (NSString *(^)(NSString *))pReadTextFile {
+
+  return ^NSString *(NSString *filepath) {
+
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+
+    NSData *readData = [fileManager contentsAtPath:filepath];
+
+    return [NSString.alloc initWithData:readData encoding:NSUTF8StringEncoding];;
+  };
+}
+
++ (BOOL (^)(NSString *, NSData *))pWriteBinaryFile {
+  return ^BOOL(NSString *filepath, NSData *content) {
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    return [fileManager createFileAtPath:filepath contents:content attributes:nil];
+  };
+}
+
++ (NSData *(^)(NSString *))pReadBinaryFile {
+
+  return ^NSData *(NSString *filepath) {
+
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+
+    NSData *readData = [fileManager contentsAtPath:filepath];
+
+    return readData;
+  };
+}
+
++ (BOOL (^)(NSString *))pMakeFolder {
+  return ^BOOL(NSString *filepath) {
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    return [fileManager createDirectoryAtPath:filepath withIntermediateDirectories:YES attributes:nil error:nil];
+  };
+}
+
+// rm -rf
++ (BOOL (^)(NSString *))pRemoveFolder {
+  return ^BOOL(NSString *dirPath) {
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    return [fileManager removeItemAtPath:dirPath error:nil];
+  };
+}
+
++ (NSArray<NSString *> *(^)(NSString *))pContentsOfDirectory {
+  return ^NSArray<NSString *> *(NSString *dirPath) {
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    return [fileManager contentsOfDirectoryAtPath:dirPath error:nil];
+  };
+}
+
++ (BOOL(^)(NSString *, NSString *))pCopy {
+  return ^BOOL(NSString *srcPath, NSString *dstPath) {
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    return [fileManager copyItemAtPath:srcPath toPath:dstPath error:nil];
+  };
+}
+
++ (BOOL(^)(NSString *, NSString *))pMove {
+  return ^BOOL(NSString *srcPath, NSString *dstPath) {
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    return [fileManager moveItemAtPath:srcPath toPath:dstPath error:nil];
+  };
+}
+
++ (void(^)(NSString *, NSString *))pAppendTextFile {
+  return ^void(NSString *filePath, NSString *content) {
+    NSFileHandle *fileHandle = [NSFileHandle fileHandleForWritingAtPath:filePath];
+    //将文件光标移动到文件的最后位置
+    [fileHandle seekToEndOfFile];
+    NSData *data = [content dataUsingEncoding:NSUTF8StringEncoding];
+    //写入数据
+    [fileHandle writeData:data];
+    //用完之后需要关掉
+    [fileHandle closeFile];
   };
 }
 

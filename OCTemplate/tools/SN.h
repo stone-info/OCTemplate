@@ -107,8 +107,6 @@ void setTimeout(id target, void (^handler)(dispatch_source_t timer), uint64_t ti
 
 + (id (^)(NSString *))readFile;
 
-+ (NSString *(^)(NSString *, NSString *))pathJoin;
-
 /**
  * @param obj
  * @param key
@@ -142,6 +140,7 @@ void setTimeout(id target, void (^handler)(dispatch_source_t timer), uint64_t ti
 
 // url encoding
 + (NSString *(^)(NSString *))urlEncoding;
+
 + (NSString *(^)(NSString *))urlDecoding;
 
 // json数据 -> OC对象 反序列化
@@ -171,6 +170,12 @@ void setTimeout(id target, void (^handler)(dispatch_source_t timer), uint64_t ti
 + (NSString *(^)(NSString *))md5WithFilePath;
 //====================================/
 
++ (NSString *)getFileMD5WithPath:(NSString *)path;
+
++ (NSString *)getMD5WithData:(NSData *)data;
+
++ (NSString *)getMD5WithString:(NSString *)string;
+
 + (NSString *(^)(NSString *))getMIMETypeWithMainQueue;
 
 + (void (^)(NSString *, void(^)(NSString *MIMEType)))getMIMETypeWithConcurrentQueue;
@@ -189,9 +194,29 @@ void setTimeout(id target, void (^handler)(dispatch_source_t timer), uint64_t ti
 
 + (BOOL (^)(NSString *))xibExists;
 
+//____________2019-06-01___file manager______________________________________________▲△__.
++ (BOOL (^)(NSString *, NSString *))pWriteTextFile;
 
++ (void (^)(NSString *, NSString *))pAppendTextFile;
+
++ (NSString *(^)(NSString *))pReadTextFile;
+
++ (BOOL (^)(NSString *, NSData *))pWriteBinaryFile;
+
++ (NSData *(^)(NSString *))pReadBinaryFile;
+
++ (BOOL (^)(NSString *))pMakeFolder;
+
++ (BOOL (^)(NSString *))pRemoveFolder;
+
++ (NSArray<NSString *> *(^)(NSString *))pContentsOfDirectory;
+
++ (BOOL(^)(NSString *, NSString *))pCopy;
+
++ (BOOL(^)(NSString *, NSString *))pMove;
 
 //====================================/
+
 #if DEBUG
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wincomplete-implementation"

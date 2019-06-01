@@ -9,6 +9,9 @@
 #ifndef SNMacro_h
 #define SNMacro_h
 
+//                              /* 文件操作 */
+/************************************************************************************/
+#define pathJoin(paths, ...) [NSString pathJoin:paths,__VA_ARGS__,nil]
 
 //                              /* 代码块 */
 /************************************************************************************/
@@ -88,7 +91,7 @@ view.layer.shadowRadius  = 1;
 
 //                              /* alert */
 /************************************************************************************/
-#define kAlert(title,msg) ([[[UIAlertView alloc] initWithTitle:title message:msg delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil] show])
+#define kAlert(title, msg) ([[[UIAlertView alloc] initWithTitle:title message:msg delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil] show])
 
 
 //                              /* image */

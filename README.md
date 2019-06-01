@@ -2,8 +2,7 @@
 
 ## publish
 ```bash
-cd $HOME/git_repository/OCTemplate/OCTemplatePublish/src
-node ./publish.js
+cd $HOME/git_repository/OCTemplate/OCTemplatePublish/src && node ./publish.js
 ```
 
 ---

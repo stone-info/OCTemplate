@@ -804,5 +804,18 @@
   </dict>
 
 
+  <dict>
+    <key>title</key>
+    <string>NSFile 测试</string>
+    <key>controllerName</key>
+    <string>T086ViewController</string>
+    <key>xib</key>
+    <false/>
+    <key>storyboard</key>
+    <false/>
+    <key>important</key>
+    <false/>
+  </dict>
+
 </array>
 </plist>
