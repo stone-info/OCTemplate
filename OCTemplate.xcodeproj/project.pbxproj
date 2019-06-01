@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		0F5C2FFBE7E1D06827A355D9 /* Pods_ExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC31F1EE1F169C853D173476 /* Pods_ExampleTests.framework */; };
 		608561BBEA9F67EA2DDFD332 /* Pods_OCTemplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC54A5FE914F17218E15BC9 /* Pods_OCTemplate.framework */; };
+		68AF8B32918C61D91FEB101C /* SNJSOCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 68AF80974338A8FFCB039626 /* SNJSOCModel.m */; };
+		68AF8F72D135C4342DDEB136 /* SNJSOCModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 68AF84EBA0DF13776940C64E /* SNJSOCModel.h */; };
+		8EE258CA22A16F8B00D2AFEA /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE258C922A16F8B00D2AFEA /* JavaScriptCore.framework */; };
+		8EE258CC22A18D4300D2AFEA /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 8EE258CB22A18D4200D2AFEA /* test.html */; };
+		8EE258CE22A18DEB00D2AFEA /* test1.html in Resources */ = {isa = PBXBuildFile; fileRef = 8EE258CD22A18DEA00D2AFEA /* test1.html */; };
+		8EE258D022A18F2D00D2AFEA /* reset.css in Resources */ = {isa = PBXBuildFile; fileRef = 8EE258CF22A18F2D00D2AFEA /* reset.css */; };
 		8EE2B5052295B3E9001F639B /* OCTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EE2B5032295B3E9001F639B /* OCTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8EE2B5132295B40A001F639B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE2B5122295B40A001F639B /* AppDelegate.m */; };
 		8EE2B5192295B40A001F639B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EE2B5172295B40A001F639B /* Main.storyboard */; };
@@ -610,8 +616,14 @@
 		5F6EE9DC665428DAF6DD316A /* Pods-OCTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCTemplate.release.xcconfig"; path = "Target Support Files/Pods-OCTemplate/Pods-OCTemplate.release.xcconfig"; sourceTree = "<group>"; };
 		623338D1870BA72DBF769DCC /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		63CC55FB47BE69E0E9E48A22 /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
+		68AF80974338A8FFCB039626 /* SNJSOCModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNJSOCModel.m; sourceTree = "<group>"; };
+		68AF84EBA0DF13776940C64E /* SNJSOCModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNJSOCModel.h; sourceTree = "<group>"; };
 		79A9D1935764F6F2F40C723F /* Pods-ExampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleUITests.debug.xcconfig"; path = "Target Support Files/Pods-ExampleUITests/Pods-ExampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7DCA7AEA63956E8A25D745A7 /* Pods-OCTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCTemplate.debug.xcconfig"; path = "Target Support Files/Pods-OCTemplate/Pods-OCTemplate.debug.xcconfig"; sourceTree = "<group>"; };
+		8EE258C922A16F8B00D2AFEA /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		8EE258CB22A18D4200D2AFEA /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
+		8EE258CD22A18DEA00D2AFEA /* test1.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test1.html; sourceTree = "<group>"; };
+		8EE258CF22A18F2D00D2AFEA /* reset.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = reset.css; sourceTree = "<group>"; };
 		8EE2B5002295B3E9001F639B /* OCTemplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OCTemplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EE2B5032295B3E9001F639B /* OCTemplate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCTemplate.h; sourceTree = "<group>"; };
 		8EE2B5042295B3E9001F639B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -1610,6 +1622,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EE258CA22A16F8B00D2AFEA /* JavaScriptCore.framework in Frameworks */,
 				8EE2B5AC2295B60B001F639B /* OCTemplate.framework in Frameworks */,
 				AB1FE1270E6DF4A5EDBF7F45 /* Pods_Example.framework in Frameworks */,
 			);
@@ -3153,8 +3166,13 @@
 		8EE2BDFF2295BF3B001F639B /* T085 */ = {
 			isa = PBXGroup;
 			children = (
-				8EE2BE002295BF3B001F639B /* T085ViewController.m */,
 				8EE2BE012295BF3B001F639B /* T085ViewController.h */,
+				8EE2BE002295BF3B001F639B /* T085ViewController.m */,
+				68AF84EBA0DF13776940C64E /* SNJSOCModel.h */,
+				68AF80974338A8FFCB039626 /* SNJSOCModel.m */,
+				8EE258CB22A18D4200D2AFEA /* test.html */,
+				8EE258CD22A18DEA00D2AFEA /* test1.html */,
+				8EE258CF22A18F2D00D2AFEA /* reset.css */,
 			);
 			path = T085;
 			sourceTree = "<group>";
@@ -4399,6 +4417,7 @@
 		CAFF20766F661DB34C7B487C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8EE258C922A16F8B00D2AFEA /* JavaScriptCore.framework */,
 				D8D4074C99FD8F414398C018 /* Pods_Example.framework */,
 				AC31F1EE1F169C853D173476 /* Pods_ExampleTests.framework */,
 				1FFF79F65B7EDEEC99571D36 /* Pods_ExampleUITests.framework */,
@@ -4461,6 +4480,7 @@
 				8EE2C24A22961F29001F639B /* SNPageControl.h in Headers */,
 				8EE2B5D92295BD9E001F639B /* UIImage+ImageExtension.h in Headers */,
 				8EE2B5052295B3E9001F639B /* OCTemplate.h in Headers */,
+				68AF8F72D135C4342DDEB136 /* SNJSOCModel.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4642,6 +4662,7 @@
 				8EE2BF112295BF3F001F639B /* 1.png in Resources */,
 				8EE2BF0B2295BF3F001F639B /* 4.png in Resources */,
 				8EE2BE912295BF3F001F639B /* T013ViewController.xib in Resources */,
+				8EE258D022A18F2D00D2AFEA /* reset.css in Resources */,
 				8EE2BE822295BF3F001F639B /* T056ViewController.storyboard in Resources */,
 				8EE2BE972295BF3F001F639B /* T028ViewController.xib in Resources */,
 				8EE2C1A92295BFAF001F639B /* lrq_data.plist in Resources */,
@@ -4659,6 +4680,7 @@
 				8EE2BF3D2295BF3F001F639B /* T015TableViewCell.xib in Resources */,
 				8EE2BF802295BF3F001F639B /* Photos.xcassets in Resources */,
 				8EE2BEA12295BF3F001F639B /* LoginCell.xib in Resources */,
+				8EE258CC22A18D4300D2AFEA /* test.html in Resources */,
 				8EE2BF272295BF3F001F639B /* T052ViewController.storyboard in Resources */,
 				8EE2BE982295BF3F001F639B /* foods.plist in Resources */,
 				8EE2B51B2295B40B001F639B /* Assets.xcassets in Resources */,
@@ -4670,6 +4692,7 @@
 				8EE2BEAA2295BF3F001F639B /* data.plist in Resources */,
 				8EE2BEC22295BF3F001F639B /* T022ViewController.xib in Resources */,
 				8EE2BF7C2295BF3F001F639B /* T063ViewController.storyboard in Resources */,
+				8EE258CE22A18DEB00D2AFEA /* test1.html in Resources */,
 				8EE2BF9D2295BF3F001F639B /* T072UserCell.xib in Resources */,
 				8EE2BF062295BF3F001F639B /* 9.png in Resources */,
 				8EE2BF952295BF3F001F639B /* T024ViewController.xib in Resources */,
@@ -4897,6 +4920,7 @@
 				8EE2C23E2295C85C001F639B /* UIView+Base.m in Sources */,
 				8EE2B5E72295BD9E001F639B /* UIColor+ColorExtension.m in Sources */,
 				8EE2C1DE2295C007001F639B /* SNView.m in Sources */,
+				68AF8B32918C61D91FEB101C /* SNJSOCModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

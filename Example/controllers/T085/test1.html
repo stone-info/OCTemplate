@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>测试IOS与JS之前的互调</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <link href="./reset.css" rel="stylesheet" type="text/css" />
+
+  <script type="text/javascript">
+
+    var jsFunc = function () {
+      alert('Objective-C call js to show alert');
+      // 不会调用，因此OCModel并不存在
+      OCModel.showAlertMsg('js title', 'js message');
+    }
+
+    var jsParamFunc = function (argument) {
+      document.getElementById('jsParamFuncSpan').innerHTML
+        = argument['name'];
+    }
+
+  </script>
+
+</head>
+
+<body>
+
+  <div>
+    <h1 style="text-align: center;">Another page</h1>
+    <p onclick="OCModel.callSystemCamera()">Call ObjC system camera</p>
+    <p onclick="OCModel.showAlertMsg('js title', 'js message')">Call ObjC system alert</p>
+  </div>
+
+  <div>
+    <p onclick="OCModel.callWithDict({'name': 'testname', 'age': 10, 'height': 170})">Call ObjC func with JSON</p>
+    <p onclick="OCModel.jsCallObjcAndObjcCallJsWithDict({'name': 'testname', 'age': 10, 'height': 170})">Call ObjC func with JSON and ObjC call js func to pass args.</p>
+  </div>
+
+  <span id="jsParamFuncSpan"></span>
+
+  <hr>
+  <a href="test.html">back to previous page</a>
+  <hr>
+
+  <!--   调用失败，因此此时还没有注入OCModel对象 -->
+  <script text="javascript">jsFunc();</script>
+</body>
+</html>
+
+<style>
+  #jsParamFuncSpan {
+    display    : block;
+    width      : 100%;
+    box-shadow : 0 0 0 1px #ccc inset;
+    text-align : center;
+    font-size  : 30px;
+
+  }
+
+  p {
+
+    margin           : 10px auto 0;
+
+    width            : 80%;
+    background-color : #FFE4B5;
+    box-shadow       : 0 0 0 1px #ccc inset;
+    text-align       : center;
+    line-height      : 50px;
+  }
+</style>

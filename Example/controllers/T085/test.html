@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>测试IOS与JS之前的互调</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <link href="./reset.css" rel="stylesheet" type="text/css" />
+
+  <script type="text/javascript">
+
+    var jsFunc = function () {
+      alert('Objective-C call js to show alert');
+    }
+
+    var jsParamFunc = function (argument) {
+      document.getElementById('jsParamFuncSpan').innerHTML = argument['name'];
+    }
+
+  </script>
+
+</head>
+
+<body>
+  <div>
+    <h1 style="text-align: center;">测试如何使用object-c调用js。</h1>
+    <p onclick="OCModel.callSystemCamera()">OCModel.callSystemCamera | 呼叫objc系统摄像机</p>
+    <p onclick="OCModel.showAlertMsg('js title', 'js message')">OCModel.showAlertMsg | 呼叫objc系统警报</p>
+  </div>
+
+  <div>
+    <p onclick="OCModel.callWithDict({'name': 'testname', 'age': 10, 'height': 170})">OCModel.callWithDict | 用JSON调用objc func</p>
+    <p onclick="OCModel.jsCallObjcAndObjcCallJsWithDict({'name': 'testname', 'age': 10, 'height': 170})">OCModel.jsCallObjcAndObjcCallJsWithDict | 用JSON调用objc func，objc调用js func来传递args</p>
+  </div>
+  <hr>
+  <span id="jsParamFuncSpan"></span>
+  <hr>
+  <div>
+    <a href="test1.html">Click to next page</a>
+  </div>
+
+</body>
+</html>
+
+<style>
+
+  #jsParamFuncSpan {
+    display    : block;
+    width      : 100%;
+    box-shadow : 0 0 0 1px #ccc inset;
+    text-align : center;
+    font-size  : 30px;
+
+  }
+
+  p {
+
+    margin           : 10px auto 0;
+
+    width            : 80%;
+    background-color : #FFE4B5;
+    box-shadow       : 0 0 0 1px #ccc inset;
+    text-align       : center;
+    line-height      : 50px;
+  }
+</style>

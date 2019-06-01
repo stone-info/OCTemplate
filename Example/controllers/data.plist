@@ -790,6 +790,19 @@
     <false/>
   </dict>
 
+  <dict>
+    <key>title</key>
+    <string>JSExportAs 测试</string>
+    <key>controllerName</key>
+    <string>T085ViewController</string>
+    <key>xib</key>
+    <false/>
+    <key>storyboard</key>
+    <false/>
+    <key>important</key>
+    <false/>
+  </dict>
+
 
 </array>
 </plist>
