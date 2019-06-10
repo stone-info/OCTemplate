@@ -15,6 +15,20 @@
 @end
 
 @implementation T085ViewController
+- (void)catchJsLog {
+  if (DEBUG) {
+    JSContext *ctx = [self.webView valueForKeyPath:@"documentView.webView.mainFrame.javaScriptContext"];
+    ctx[@"h5log"] = ^(JSValue *obj, JSValue *key, JSValue *filename, JSValue *lineNumber, JSValue *color) {
+      H5Log(key.toString.UTF8String, filename.toString.UTF8String, lineNumber.toUInt32, @"%@", obj);
+    };
+
+    ctx[@"console"][@"log"] = ^(JSValue *msg) { ILog(@"%@", msg); };
+
+    ctx[@"console"][@"warn"] = ^(JSValue *msg) { ILog(@"%@", msg); };
+
+    ctx[@"console"][@"error"] = ^(JSValue *msg) { ILog(@"%@", msg); };
+  }
+}
 
 - (void)viewDidLoad {
   [super viewDidLoad];
@@ -24,8 +38,9 @@
   UIWebView *webView = UIWebView.new;
   self.webView = webView;
   // webView.scalesPageToFit = YES;
-  NSURL *url = [[NSBundle mainBundle] URLForResource:@"test" withExtension:@"html"];
+  // NSURL *url = [[NSBundle mainBundle] URLForResource:@"test" withExtension:@"html"];
   // NSURL        *url     = [NSURL URLWithString:@"http://www.baidu.com"];
+  NSURL *url = [NSURL URLWithString:@"http://192.168.1.105:8090"];
 
   NSURLRequest *request = [NSURLRequest requestWithURL:url];
   [webView loadRequest:request];
@@ -53,6 +68,8 @@
   //  JSValue *value = [squareFunc callWithArguments:@[@"20"]];
   //  NSLog(@"%@", square.toNumber);
   //  NSLog(@"%@", value.toNumber);
+
+  [self catchJsLog];
 }
 
 #pragma mark - <UIWebViewDelegate>

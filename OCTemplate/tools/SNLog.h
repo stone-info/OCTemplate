@@ -66,6 +66,7 @@
 #define WARNING_TEMPLATE "<%s %s:%d>-:▼\n\033[1;97;43m %s \033[0m\n--------------------------------------------------------------------------------------------------\n"
 #define INFO_TEMPLATE "<%s %s:%d>-:▼\n\033[1;97;46m %s \033[0m\n--------------------------------------------------------------------------------------------------\n"
 #define BORDER_TEMPLATE "<%s %s:%d>-: %s\n"
+#define H5_TEMPLATE "<%s %s:%d>-: \033[1;97;42m %s \033[0m ▼\n\033[1;97;46m %s \033[0m\n--------------------------------------------------------------------------------------------------\n"
 
 #ifdef DEBUG
 // #define NSLog(FORMAT, ...) do {fprintf(stderr, "<%s %s:%d>-:%s\n--------------------------------------------------------------------------------------------------\n", [[NSDate.date dateByAddingTimeInterval:[NSTimeZone.systemTimeZone secondsFromGMTForDate:NSDate.date]].description substringWithRange:NSMakeRange(11, 8)].UTF8String, [NSString stringWithUTF8String:__FILE__].lastPathComponent.UTF8String, __LINE__, [NSString stringWithFormat:FORMAT, ##__VA_ARGS__].UTF8String);} while (0);
@@ -77,6 +78,7 @@
 #define WLog(FORMAT, ...) do {printf(WARNING_TEMPLATE, LOG_TIME, LOG_FILE, __LINE__, [NSString stringWithFormat:FORMAT, ##__VA_ARGS__].UTF8String);} while (0);
 #define ILog(FORMAT, ...) do {printf(INFO_TEMPLATE, LOG_TIME, LOG_FILE, __LINE__, [NSString stringWithFormat:FORMAT, ##__VA_ARGS__].UTF8String);} while (0);
 #define KLog(FORMAT, ...) do {printf(BORDER_TEMPLATE, LOG_TIME, LOG_FILE, __LINE__, [NSString stringWithFormat:FORMAT, ##__VA_ARGS__].UTF8String);} while (0);
+#define H5Log(H5KEY, H5FILE, H5LINE, FORMAT, ...) do {printf(H5_TEMPLATE,LOG_TIME,H5FILE,H5LINE,H5KEY,[NSString stringWithFormat:FORMAT, ##__VA_ARGS__].UTF8String);} while (0);
 
 // #define NSLog(FORMAT, ...) do {printf("<%s %s:%d>-:▼\n\033[1;7;48m %s \033[0m\n--------------------------------------------------------------------------------------------------\n", [[NSDate.date dateByAddingTimeInterval:[NSTimeZone.systemTimeZone secondsFromGMTForDate:NSDate.date]].description substringWithRange:NSMakeRange(11, 8)].UTF8String, [NSString stringWithUTF8String:__FILE__].lastPathComponent.UTF8String, __LINE__, [NSString stringWithFormat:FORMAT, ##__VA_ARGS__].UTF8String);} while (0);
 // #define RLog(FORMAT, ...) do {printf("<%s %s:%d>-:▼\n\033[1;97;41m %s \033[0m\n--------------------------------------------------------------------------------------------------\n", [[NSDate.date dateByAddingTimeInterval:[NSTimeZone.systemTimeZone secondsFromGMTForDate:NSDate.date]].description substringWithRange:NSMakeRange(11, 8)].UTF8String, [NSString stringWithUTF8String:__FILE__].lastPathComponent.UTF8String, __LINE__, [NSString stringWithFormat:FORMAT, ##__VA_ARGS__].UTF8String);} while (0);
@@ -131,6 +133,7 @@ hud.offset              = CGPointMake(0.f, MBProgressMaxOffset);\
 #define WLog
 #define ILog
 #define KLog
+#define H5Log
 // #define RLog
 // #define GLog
 // #define BLog
