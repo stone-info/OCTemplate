@@ -53,9 +53,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (CGSize)SNDeviceScreenSize;
 
-+ (UIImage *)imageNamedWithBundleName:(NSString *)bundleName
-             imageName:(NSString *)imageName
-             extension:(NSString *__nullable)extension;
++ (UIImage *)imageNamedWithBundleName:(NSString *)bundleName imageName:(NSString *)imageName extension:(NSString *__nullable)extension;
 
 + (NSString *)randomString;
 
@@ -215,7 +213,13 @@ void setTimeout(id target, void (^handler)(dispatch_source_t timer), uint64_t ti
 
 + (BOOL(^)(NSString *, NSString *))pMove;
 
-//====================================/
++ (NSString *)stringToHexCodeText:(NSString *)text;
+
++ (NSString *)hexCodeToString:(unsigned char *)charCode;
+//____________________________________________________________________________________▲△__.
+//____________________________________________________________________________________▲△__.
+//____________________________________________________________________________________▲△__.
+
 
 #if DEBUG
 #pragma clang diagnostic push

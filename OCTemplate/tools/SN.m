@@ -1374,7 +1374,7 @@ static CFStringRef FileMD5HashCreateWithPath(CFStringRef filePath, size_t chunkS
   };
 }
 
-+ (void(^)(NSString *, NSString *))pAppendTextFile {
++ (void (^)(NSString *, NSString *))pAppendTextFile {
   return ^void(NSString *filePath, NSString *content) {
     NSFileHandle *fileHandle = [NSFileHandle fileHandleForWritingAtPath:filePath];
     //将文件光标移动到文件的最后位置
@@ -1385,6 +1385,45 @@ static CFStringRef FileMD5HashCreateWithPath(CFStringRef filePath, size_t chunkS
     //用完之后需要关掉
     [fileHandle closeFile];
   };
+}
+
+//____________2019-06-10_________________________________________________▲△__.
+
+/**
+ * NSString *baseUrl = [self stringToHexCodeText:@"MobileSubstrate"];
+ * NSLog(baseUrl);
+ * unsigned char codeText[] = {0x4d, 0x6f, 0x62, 0x69, 0x6c, 0x65, 0x53, 0x75, 0x62, 0x73, 0x74, 0x72, 0x61, 0x74, 0x65, 0x00};
+ * NSString      *value     = [self hexCodeToString:codeText];
+ * return value;
+ * @param text
+ * @return
+ */
+/* 特殊用处 */
++ (NSString *)stringToHexCodeText:(NSString *)text {
+
+  NSMutableString *value = [[NSMutableString alloc] init];
+
+  const char *a = [text UTF8String];
+  for (int   i  = 0; i < strlen(a); i++) {
+    NSString *v;
+    if ([value length] == 0) {
+      v = [NSString stringWithFormat:@"{0x%02x", a[i]];
+    } else {
+      v = [NSString stringWithFormat:@", 0x%02x", a[i]];
+    }
+
+    [value appendString:v];
+    if (i == strlen(a) - 1) {
+      [value appendString:@", 0x00}"];
+    }
+
+  }
+  return value;
+}
+
++ (NSString *)hexCodeToString:(unsigned char *)charCode {
+  NSString *string_content = [[NSString alloc] initWithCString:(const char *) charCode encoding:NSASCIIStringEncoding];
+  return string_content;
 }
 
 @end
