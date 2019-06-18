@@ -15,6 +15,18 @@
 		8EE258CC22A18D4300D2AFEA /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 8EE258CB22A18D4200D2AFEA /* test.html */; };
 		8EE258CE22A18DEB00D2AFEA /* test1.html in Resources */ = {isa = PBXBuildFile; fileRef = 8EE258CD22A18DEA00D2AFEA /* test1.html */; };
 		8EE258D022A18F2D00D2AFEA /* reset.css in Resources */ = {isa = PBXBuildFile; fileRef = 8EE258CF22A18F2D00D2AFEA /* reset.css */; };
+		86A160AA8CB47FF4E9EA6064 /* LRQDemoSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A169648869D9F0E86D2A5F /* LRQDemoSectionController.m */; };
+		86A160ABEC061D8848155457 /* LRQSpinnerSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A1698D251E08C16B95043E /* LRQSpinnerSectionController.m */; };
+		86A161C7A1AD324CF8C0C974 /* LRQLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A16C2179E9D24ED9217973 /* LRQLabelCell.m */; };
+		86A1626940001F5FBF0F0FE6 /* LRQLoadMoreViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 86A163206CB58ED8FF1A7628 /* LRQLoadMoreViewController.h */; };
+		86A162D0904C07C02FFA1811 /* LRQLabelSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A16523603BA0B4C8A7A6E5 /* LRQLabelSectionController.m */; };
+		86A1634ED4B810D45F46A080 /* LRQLabelSectionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 86A1673B485D499CF5033184 /* LRQLabelSectionController.h */; };
+		86A1649A3C44A49585A6846D /* LRQSpinnerCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 86A164E233456DEBCFFF335E /* LRQSpinnerCell.h */; };
+		86A166C3A21F6C51904B3FA7 /* LRQLoadMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A169EC78CBEAD4431FA9F6 /* LRQLoadMoreViewController.m */; };
+		86A167EB336F1A663E3474B0 /* LRQSpinnerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A1620259C62D43109A383F /* LRQSpinnerCell.m */; };
+		86A16AF4A1B18673BC0EAC6D /* LRQLabelCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 86A164DB5B82B8C066EF9CAC /* LRQLabelCell.h */; };
+		86A16B0A3CA39201AC237100 /* LRQDemoSectionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 86A16B232FB6B01AF38E99EA /* LRQDemoSectionController.h */; };
+		86A16C26665E8851A5188056 /* LRQSpinnerSectionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 86A16ADD80E39D1090B12DE6 /* LRQSpinnerSectionController.h */; };
 		8EE2B5052295B3E9001F639B /* OCTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EE2B5032295B3E9001F639B /* OCTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8EE2B5132295B40A001F639B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE2B5122295B40A001F639B /* AppDelegate.m */; };
 		8EE2B5192295B40A001F639B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EE2B5172295B40A001F639B /* Main.storyboard */; };
@@ -624,6 +636,18 @@
 		8EE258CB22A18D4200D2AFEA /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
 		8EE258CD22A18DEA00D2AFEA /* test1.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test1.html; sourceTree = "<group>"; };
 		8EE258CF22A18F2D00D2AFEA /* reset.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = reset.css; sourceTree = "<group>"; };
+		86A1620259C62D43109A383F /* LRQSpinnerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRQSpinnerCell.m; sourceTree = "<group>"; };
+		86A163206CB58ED8FF1A7628 /* LRQLoadMoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRQLoadMoreViewController.h; sourceTree = "<group>"; };
+		86A164DB5B82B8C066EF9CAC /* LRQLabelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRQLabelCell.h; sourceTree = "<group>"; };
+		86A164E233456DEBCFFF335E /* LRQSpinnerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRQSpinnerCell.h; sourceTree = "<group>"; };
+		86A16523603BA0B4C8A7A6E5 /* LRQLabelSectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRQLabelSectionController.m; sourceTree = "<group>"; };
+		86A1673B485D499CF5033184 /* LRQLabelSectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRQLabelSectionController.h; sourceTree = "<group>"; };
+		86A169648869D9F0E86D2A5F /* LRQDemoSectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRQDemoSectionController.m; sourceTree = "<group>"; };
+		86A1698D251E08C16B95043E /* LRQSpinnerSectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRQSpinnerSectionController.m; sourceTree = "<group>"; };
+		86A169EC78CBEAD4431FA9F6 /* LRQLoadMoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRQLoadMoreViewController.m; sourceTree = "<group>"; };
+		86A16ADD80E39D1090B12DE6 /* LRQSpinnerSectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRQSpinnerSectionController.h; sourceTree = "<group>"; };
+		86A16B232FB6B01AF38E99EA /* LRQDemoSectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRQDemoSectionController.h; sourceTree = "<group>"; };
+		86A16C2179E9D24ED9217973 /* LRQLabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRQLabelCell.m; sourceTree = "<group>"; };
 		8EE2B5002295B3E9001F639B /* OCTemplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OCTemplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EE2B5032295B3E9001F639B /* OCTemplate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCTemplate.h; sourceTree = "<group>"; };
 		8EE2B5042295B3E9001F639B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -1660,6 +1684,39 @@
 				5F6EE9DC665428DAF6DD316A /* Pods-OCTemplate.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		86A16055E701AD17070DCBAF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				86A16C2179E9D24ED9217973 /* LRQLabelCell.m */,
+				86A164DB5B82B8C066EF9CAC /* LRQLabelCell.h */,
+				86A1620259C62D43109A383F /* LRQSpinnerCell.m */,
+				86A164E233456DEBCFFF335E /* LRQSpinnerCell.h */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		86A16433079363ED62CB2983 /* LRQDemoSectionController */ = {
+			isa = PBXGroup;
+			children = (
+				86A169648869D9F0E86D2A5F /* LRQDemoSectionController.m */,
+				86A16B232FB6B01AF38E99EA /* LRQDemoSectionController.h */,
+				86A16523603BA0B4C8A7A6E5 /* LRQLabelSectionController.m */,
+				86A1673B485D499CF5033184 /* LRQLabelSectionController.h */,
+				86A1698D251E08C16B95043E /* LRQSpinnerSectionController.m */,
+				86A16ADD80E39D1090B12DE6 /* LRQSpinnerSectionController.h */,
+			);
+			path = LRQDemoSectionController;
+			sourceTree = "<group>";
+		};
+		86A16F29C9527497A781FA4E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				86A169EC78CBEAD4431FA9F6 /* LRQLoadMoreViewController.m */,
+				86A163206CB58ED8FF1A7628 /* LRQLoadMoreViewController.h */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		8EE2B4F62295B3E9001F639B = {
@@ -4112,6 +4169,9 @@
 			children = (
 				8EE2C1552295BFAD001F639B /* L002ViewController.m */,
 				8EE2C1562295BFAD001F639B /* L002ViewController.h */,
+				86A16433079363ED62CB2983 /* LRQDemoSectionController */,
+				86A16055E701AD17070DCBAF /* Views */,
+				86A16F29C9527497A781FA4E /* ViewControllers */,
 			);
 			path = L002;
 			sourceTree = "<group>";
@@ -4481,6 +4541,12 @@
 				8EE2B5D92295BD9E001F639B /* UIImage+ImageExtension.h in Headers */,
 				8EE2B5052295B3E9001F639B /* OCTemplate.h in Headers */,
 				68AF8F72D135C4342DDEB136 /* SNJSOCModel.h in Headers */,
+				86A16B0A3CA39201AC237100 /* LRQDemoSectionController.h in Headers */,
+				86A16AF4A1B18673BC0EAC6D /* LRQLabelCell.h in Headers */,
+				86A1634ED4B810D45F46A080 /* LRQLabelSectionController.h in Headers */,
+				86A16C26665E8851A5188056 /* LRQSpinnerSectionController.h in Headers */,
+				86A1626940001F5FBF0F0FE6 /* LRQLoadMoreViewController.h in Headers */,
+				86A1649A3C44A49585A6846D /* LRQSpinnerCell.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4921,6 +4987,12 @@
 				8EE2B5E72295BD9E001F639B /* UIColor+ColorExtension.m in Sources */,
 				8EE2C1DE2295C007001F639B /* SNView.m in Sources */,
 				68AF8B32918C61D91FEB101C /* SNJSOCModel.m in Sources */,
+				86A160AA8CB47FF4E9EA6064 /* LRQDemoSectionController.m in Sources */,
+				86A161C7A1AD324CF8C0C974 /* LRQLabelCell.m in Sources */,
+				86A162D0904C07C02FFA1811 /* LRQLabelSectionController.m in Sources */,
+				86A160ABEC061D8848155457 /* LRQSpinnerSectionController.m in Sources */,
+				86A166C3A21F6C51904B3FA7 /* LRQLoadMoreViewController.m in Sources */,
+				86A167EB336F1A663E3474B0 /* LRQSpinnerCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
