@@ -70,8 +70,6 @@
          [self.zipcode isEqualToString:model.zipcode] &&
          [self.geo isEqualToDiffableObject:model.geo];
 }
-
-
 @end
 
 @implementation T072Company
@@ -87,6 +85,4 @@
          [self.catchPhrase isEqualToString:model.catchPhrase] &&
          [self.bs isEqualToString:model.bs];
 }
-
-
 @end

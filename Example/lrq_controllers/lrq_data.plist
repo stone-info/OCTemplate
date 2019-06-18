@@ -15,13 +15,24 @@
 
     <dict>
       <key>title</key>
-      <string>IGListKit demo Copyright @Maskkk</string>
+      <string>IGListKit demo Copyright ®Maskkk</string>
       <key>controllerName</key>
       <string>L001ViewController</string>
       <key>xib</key>
       <false/>
       <key>storyboard</key>
       <false/>
+    </dict>
+
+    <dict>
+    <key>title</key>
+    <string>IGListKit Official Demo ®Maskkk</string>
+    <key>controllerName</key>
+    <string>L002ViewController</string>
+    <key>xib</key>
+    <false/>
+    <key>storyboard</key>
+    <false/>
     </dict>
 
     <!--<dict>-->

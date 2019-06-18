@@ -29,7 +29,7 @@
 #import "ReorderableViewController.h"
 #import "ReorderableStackedViewController.h"
 #import <IGListKit/IGListKit.h>
-
+#import <MJRefresh/MJRefresh.h>
 @interface D000ViewController () <IGListAdapterDataSource>
 @property (strong, nonatomic) UICollectionView    *collectionView;
 @property (strong, nonatomic) IGListAdapter       *adapter;
@@ -104,6 +104,12 @@
   } else {
     self.automaticallyAdjustsScrollViewInsets = NO;
   }
+
+  self.collectionView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+    setTimeout(self, ^(dispatch_source_t timer) {
+      [self.collectionView.mj_header endRefreshing];
+    }, 5000);
+  }];
 }
 
 // - (void)viewDidLayoutSubviews {
