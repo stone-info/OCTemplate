@@ -9,10 +9,11 @@
 #import "LRQSpinnerSectionController.h"
 #import "LRQSpinnerCell.h"
 #import "CustomCollectionView.h"
+#import "UIView+Common.h"
 
 NSString                                             *spinner = @"spinner";
 
-@interface LRQLoadMoreViewController ()
+@interface LRQLoadMoreViewController () <IGListAdapterDataSource, UIScrollViewDelegate>
 @property (nonatomic, strong) IGListAdapter          *adapter;
 @property (nonatomic, strong) NSArray                *datas;
 @property (nonatomic, strong) UICollectionView       *collectionView;
@@ -24,7 +25,20 @@ NSString                                             *spinner = @"spinner";
 - (void)viewDidLoad {
   [super viewDidLoad];
   self.view.backgroundColor = [UIColor whiteColor];
+  [self.view addSubview:self.collectionView];
+  self.adapter.collectionView = self.collectionView;
+  self.adapter.dataSource = self;
+  self.adapter.scrollViewDelegate = self;
+}
 
+- (void)viewDidLayoutSubviews {
+  [super viewDidLayoutSubviews];
+
+  self.collectionView.frame = self.view.bounds;
+}
+
+- (void)dealloc {
+  NSLog(@"----------- dealloc -------------- ");
 }
 
 #pragma mark - <IGListAdapterDataSource>
@@ -34,7 +48,7 @@ NSString                                             *spinner = @"spinner";
   if (_loading) {
     [mutableData addObject:spinner];
   }
-  return [self datas];
+  return mutableData;
 }
 
 - (IGListSectionController *)listAdapter:(IGListAdapter *)listAdapter sectionControllerForObject:(id)object {
@@ -57,6 +71,41 @@ NSString                                             *spinner = @"spinner";
   return nil;
 }
 
+#pragma mark - <UIScrollViewDelegate>
+- (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset {
+  NSLog(@"scrollView = %@", scrollView);
+  CGFloat distance = (scrollView.contentSize.height - scrollView.height - targetContentOffset->y);
+  if (distance < 200 && !_loading) {
+
+    _loading = YES;
+
+    [self.adapter performUpdatesAnimated:YES completion:nil];
+
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+
+      [NSThread sleepForTimeInterval:5.0];
+
+      dispatch_async(dispatch_get_main_queue(), ^{
+        self.loading = false;
+        [self increaseData];
+        [self.adapter performUpdatesAnimated:YES completion:nil];
+      });
+
+    });
+  }
+}
+
+#pragma mark - <private method>
+- (void)increaseData {
+  NSInteger count = self.datas.count;
+  NSMutableArray *mutableData = [NSMutableArray array];
+  for (NSInteger i            = 0; i < count+5; ++i) {
+    [mutableData addObject:@(i)];
+  }
+  self.datas = [mutableData copy];
+}
+
+#pragma mark - <getter & setter>
 - (IGListAdapter *)adapter {
 
   /** _adapter lazy load */
@@ -92,5 +141,7 @@ NSString                                             *spinner = @"spinner";
   }
   return _datas;
 }
+
+
 
 @end

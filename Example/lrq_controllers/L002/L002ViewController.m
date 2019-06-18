@@ -78,7 +78,6 @@
 }
 
 - (IGListSectionController *)listAdapter:(IGListAdapter *)listAdapter sectionControllerForObject:(id)object {
-  NSLog(@"listAdapter = %@", listAdapter);
   return [LRQDemoSectionController new];
 }
 

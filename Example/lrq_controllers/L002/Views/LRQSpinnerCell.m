@@ -27,6 +27,7 @@
 
   if (_activityIndicatorView == nil) {
     _activityIndicatorView = [UIActivityIndicatorView new];
+    _activityIndicatorView.activityIndicatorViewStyle = UIActivityIndicatorViewStyleGray;
   }
   return _activityIndicatorView;
 }
