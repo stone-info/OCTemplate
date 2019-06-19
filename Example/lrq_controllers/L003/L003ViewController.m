@@ -8,26 +8,74 @@
 
 #import "L003ViewController.h"
 
-@interface  L003ViewController ()
-
+@interface L003ViewController ()
+@property (nonatomic, strong) UIImageView *imageView;
 @end
 
-@implementation  L003ViewController
+@implementation L003ViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+  [super viewDidLoad];
+  // Do any additional setup after loading the view from its nib.
+  self.view.backgroundColor = [UIColor whiteColor];
+  [self.view addSubview:self.imageView];
+  UIImage *launchImg = [UIImage imageNamed:[self getLaunchImage]];
+  NSLog(@"launchImg = %@", launchImg);
+  self.imageView.image = launchImg;
 }
 
-/*
-#pragma mark - Navigation
+- (void)viewDidLayoutSubviews {
+  [super viewDidLayoutSubviews];
+  self.imageView.frame = self.view.bounds;
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
 }
-*/
 
+- (UIImageView *)imageView {
+
+  /** _imageView lazy load */
+
+  if (_imageView == nil) {
+    _imageView = [UIImageView new];
+  }
+  return _imageView;
+}
+
+- (NSString *)getLaunchImage {
+  CGSize screenSize = [UIScreen mainScreen].bounds.size;
+  NSArray *infoArr = [[[NSBundle mainBundle] infoDictionary] valueForKey:@"UILaunchImages"];
+  NSString *imgName;
+  for (NSDictionary *dict in infoArr) {
+    NSLog(@"dict = %@", dict);
+    CGSize size = CGSizeFromString(dict[@"UILaunchImageSize"]);
+    imgName = dict[@"UILaunchImageName"];
+    //首先是竖向, 并且图片名必须由Portrait
+    if (![dict[@"UILaunchImageOrientation"] isEqualToString:@"Portrait"]) {
+      continue;
+    }
+    NSRange range = [imgName rangeOfString:@"-" options:NSBackwardsSearch];
+    NSString *nameSuffix = [imgName substringFromIndex:range.location+range.length];
+    nameSuffix = [nameSuffix substringToIndex:nameSuffix.length-1];
+    NSInteger imgHeight = [nameSuffix integerValue];
+
+    if ((screenSize.width == size.width)
+        &&
+        (screenSize.height == size.height)) {
+      if ([dict[@"UILaunchImageMinimumOSVersion"] isEqualToString:@"12.0"]) {
+        if ((imgHeight / @(screenSize.height).integerValue) == UIScreen.mainScreen.scale) {
+          imgName = dict[@"UILaunchImageName"];
+          break;
+        } else {
+          imgName = @"";
+        }
+      } else {
+        imgName = dict[@"UILaunchImageName"];
+        break;
+      }
+    } else {
+      imgName = @"";
+    }
+  }
+  return imgName;
+}
 @end
     

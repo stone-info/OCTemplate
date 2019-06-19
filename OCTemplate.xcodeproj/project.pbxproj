@@ -11,10 +11,6 @@
 		608561BBEA9F67EA2DDFD332 /* Pods_OCTemplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC54A5FE914F17218E15BC9 /* Pods_OCTemplate.framework */; };
 		68AF8B32918C61D91FEB101C /* SNJSOCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 68AF80974338A8FFCB039626 /* SNJSOCModel.m */; };
 		68AF8F72D135C4342DDEB136 /* SNJSOCModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 68AF84EBA0DF13776940C64E /* SNJSOCModel.h */; };
-		8EE258CA22A16F8B00D2AFEA /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE258C922A16F8B00D2AFEA /* JavaScriptCore.framework */; };
-		8EE258CC22A18D4300D2AFEA /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 8EE258CB22A18D4200D2AFEA /* test.html */; };
-		8EE258CE22A18DEB00D2AFEA /* test1.html in Resources */ = {isa = PBXBuildFile; fileRef = 8EE258CD22A18DEA00D2AFEA /* test1.html */; };
-		8EE258D022A18F2D00D2AFEA /* reset.css in Resources */ = {isa = PBXBuildFile; fileRef = 8EE258CF22A18F2D00D2AFEA /* reset.css */; };
 		86A160AA8CB47FF4E9EA6064 /* LRQDemoSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A169648869D9F0E86D2A5F /* LRQDemoSectionController.m */; };
 		86A160ABEC061D8848155457 /* LRQSpinnerSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A1698D251E08C16B95043E /* LRQSpinnerSectionController.m */; };
 		86A161C7A1AD324CF8C0C974 /* LRQLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A16C2179E9D24ED9217973 /* LRQLabelCell.m */; };
@@ -27,6 +23,10 @@
 		86A16AF4A1B18673BC0EAC6D /* LRQLabelCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 86A164DB5B82B8C066EF9CAC /* LRQLabelCell.h */; };
 		86A16B0A3CA39201AC237100 /* LRQDemoSectionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 86A16B232FB6B01AF38E99EA /* LRQDemoSectionController.h */; };
 		86A16C26665E8851A5188056 /* LRQSpinnerSectionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 86A16ADD80E39D1090B12DE6 /* LRQSpinnerSectionController.h */; };
+		8EE258CA22A16F8B00D2AFEA /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE258C922A16F8B00D2AFEA /* JavaScriptCore.framework */; };
+		8EE258CC22A18D4300D2AFEA /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 8EE258CB22A18D4200D2AFEA /* test.html */; };
+		8EE258CE22A18DEB00D2AFEA /* test1.html in Resources */ = {isa = PBXBuildFile; fileRef = 8EE258CD22A18DEA00D2AFEA /* test1.html */; };
+		8EE258D022A18F2D00D2AFEA /* reset.css in Resources */ = {isa = PBXBuildFile; fileRef = 8EE258CF22A18F2D00D2AFEA /* reset.css */; };
 		8EE2B5052295B3E9001F639B /* OCTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EE2B5032295B3E9001F639B /* OCTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8EE2B5132295B40A001F639B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE2B5122295B40A001F639B /* AppDelegate.m */; };
 		8EE2B5192295B40A001F639B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EE2B5172295B40A001F639B /* Main.storyboard */; };
@@ -632,10 +632,6 @@
 		68AF84EBA0DF13776940C64E /* SNJSOCModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNJSOCModel.h; sourceTree = "<group>"; };
 		79A9D1935764F6F2F40C723F /* Pods-ExampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleUITests.debug.xcconfig"; path = "Target Support Files/Pods-ExampleUITests/Pods-ExampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7DCA7AEA63956E8A25D745A7 /* Pods-OCTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCTemplate.debug.xcconfig"; path = "Target Support Files/Pods-OCTemplate/Pods-OCTemplate.debug.xcconfig"; sourceTree = "<group>"; };
-		8EE258C922A16F8B00D2AFEA /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		8EE258CB22A18D4200D2AFEA /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
-		8EE258CD22A18DEA00D2AFEA /* test1.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test1.html; sourceTree = "<group>"; };
-		8EE258CF22A18F2D00D2AFEA /* reset.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = reset.css; sourceTree = "<group>"; };
 		86A1620259C62D43109A383F /* LRQSpinnerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRQSpinnerCell.m; sourceTree = "<group>"; };
 		86A163206CB58ED8FF1A7628 /* LRQLoadMoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRQLoadMoreViewController.h; sourceTree = "<group>"; };
 		86A164DB5B82B8C066EF9CAC /* LRQLabelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRQLabelCell.h; sourceTree = "<group>"; };
@@ -648,6 +644,10 @@
 		86A16ADD80E39D1090B12DE6 /* LRQSpinnerSectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRQSpinnerSectionController.h; sourceTree = "<group>"; };
 		86A16B232FB6B01AF38E99EA /* LRQDemoSectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRQDemoSectionController.h; sourceTree = "<group>"; };
 		86A16C2179E9D24ED9217973 /* LRQLabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRQLabelCell.m; sourceTree = "<group>"; };
+		8EE258C922A16F8B00D2AFEA /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		8EE258CB22A18D4200D2AFEA /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
+		8EE258CD22A18DEA00D2AFEA /* test1.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test1.html; sourceTree = "<group>"; };
+		8EE258CF22A18F2D00D2AFEA /* reset.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = reset.css; sourceTree = "<group>"; };
 		8EE2B5002295B3E9001F639B /* OCTemplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OCTemplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EE2B5032295B3E9001F639B /* OCTemplate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCTemplate.h; sourceTree = "<group>"; };
 		8EE2B5042295B3E9001F639B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -5627,6 +5627,7 @@
 			baseConfigurationReference = 623338D1870BA72DBF769DCC /* Pods-Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CCY4J8QDXD;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PRODUCT_NAME)/SNPrefix.pch";
@@ -5709,6 +5710,7 @@
 			baseConfigurationReference = 63CC55FB47BE69E0E9E48A22 /* Pods-Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CCY4J8QDXD;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PRODUCT_NAME)/SNPrefix.pch";
