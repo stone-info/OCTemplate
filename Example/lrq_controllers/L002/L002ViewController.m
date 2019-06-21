@@ -60,7 +60,7 @@
   if (_datas == nil) {
     _datas = @[
       [[LRQDemoItem alloc] initWithName:@"Tail Loading" controllerClass:NSClassFromString(@"LRQLoadMoreViewController") controllerIdentifier:nil],
-      [[LRQDemoItem alloc] initWithName:@"Search Autocomplete" controllerClass:NSClassFromString(@"searchViewController") controllerIdentifier:nil],
+      [[LRQDemoItem alloc] initWithName:@"Search Autocomplete" controllerClass:NSClassFromString(@"LRQSearchViewController") controllerIdentifier:nil],
       [[LRQDemoItem alloc] initWithName:@"Mixed Data" controllerClass:NSClassFromString(@"MixedDataViewController") controllerIdentifier:nil],
       [[LRQDemoItem alloc] initWithName:@"Nested Adapter" controllerClass:NSClassFromString(@"NesteddapterViewController") controllerIdentifier:nil],
       [[LRQDemoItem alloc] initWithName:@"Empty View" controllerClass:NSClassFromString(@"EmptyViewController") controllerIdentifier:nil],

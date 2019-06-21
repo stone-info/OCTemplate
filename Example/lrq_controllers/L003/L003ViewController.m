@@ -27,7 +27,6 @@
 - (void)viewDidLayoutSubviews {
   [super viewDidLayoutSubviews];
   self.imageView.frame = self.view.bounds;
-
 }
 
 - (UIImageView *)imageView {

@@ -8,7 +8,7 @@
 #import "LRQLabelCell.h"
 
 @interface LRQLabelSectionController ()
-@property (nonatomic, copy) NSNumber *object;
+@property (nonatomic, copy) id object;
 @end
 
 @implementation LRQLabelSectionController {}
@@ -22,8 +22,11 @@
                              dequeueReusableCellOfClass:LRQLabelCell.class
                              forSectionController:self
                              atIndex:index];
-
-  labelCell.text = self.object.stringValue;
+  if ([self.object isKindOfClass:NSNumber.class]) {
+    labelCell.text = [self.object stringValue];
+  } else {
+    labelCell.text = self.object;
+  }
 
   return labelCell;
 }
