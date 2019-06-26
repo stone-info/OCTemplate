@@ -9,6 +9,7 @@
 #import <IGListKit/IGListKit.h>
 #import "L002ViewController.h"
 #import "LRQDemoSectionController.h"
+#import "LRQNestedAdapterViewController.h"
 
 @interface L002ViewController () <IGListAdapterDataSource>
 @property (nonatomic, strong) IGListAdapter    *adapter;
@@ -62,7 +63,7 @@
       [[LRQDemoItem alloc] initWithName:@"Tail Loading" controllerClass:NSClassFromString(@"LRQLoadMoreViewController") controllerIdentifier:nil],
       [[LRQDemoItem alloc] initWithName:@"Search Autocomplete" controllerClass:NSClassFromString(@"LRQSearchViewController") controllerIdentifier:nil],
       [[LRQDemoItem alloc] initWithName:@"Mixed Data" controllerClass:NSClassFromString(@"LRQMixedDataViewController") controllerIdentifier:nil],
-      [[LRQDemoItem alloc] initWithName:@"Nested Adapter" controllerClass:NSClassFromString(@"NesteddapterViewController") controllerIdentifier:nil],
+      [[LRQDemoItem alloc] initWithName:@"Nested Adapter" controllerClass:NSClassFromString(@"LRQNestedAdapterViewController") controllerIdentifier:nil],
       [[LRQDemoItem alloc] initWithName:@"Empty View" controllerClass:NSClassFromString(@"EmptyViewController") controllerIdentifier:nil],
       [[LRQDemoItem alloc] initWithName:@"Single Section Controller" controllerClass:NSClassFromString(@"SingleSectionViewController") controllerIdentifier:nil],
       [[LRQDemoItem alloc] initWithName:@"Storyboard" controllerClass:NSClassFromString(@"SingleSectionViewController") controllerIdentifier:@"demo"],
