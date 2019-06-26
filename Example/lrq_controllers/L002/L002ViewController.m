@@ -64,7 +64,7 @@
       [[LRQDemoItem alloc] initWithName:@"Search Autocomplete" controllerClass:NSClassFromString(@"LRQSearchViewController") controllerIdentifier:nil],
       [[LRQDemoItem alloc] initWithName:@"Mixed Data" controllerClass:NSClassFromString(@"LRQMixedDataViewController") controllerIdentifier:nil],
       [[LRQDemoItem alloc] initWithName:@"Nested Adapter" controllerClass:NSClassFromString(@"LRQNestedAdapterViewController") controllerIdentifier:nil],
-      [[LRQDemoItem alloc] initWithName:@"Empty View" controllerClass:NSClassFromString(@"EmptyViewController") controllerIdentifier:nil],
+      [[LRQDemoItem alloc] initWithName:@"Empty View" controllerClass:NSClassFromString(@"LRQEmptyViweController") controllerIdentifier:nil],
       [[LRQDemoItem alloc] initWithName:@"Single Section Controller" controllerClass:NSClassFromString(@"SingleSectionViewController") controllerIdentifier:nil],
       [[LRQDemoItem alloc] initWithName:@"Storyboard" controllerClass:NSClassFromString(@"SingleSectionViewController") controllerIdentifier:@"demo"],
     ];

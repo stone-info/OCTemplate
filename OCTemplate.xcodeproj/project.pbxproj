@@ -15,6 +15,9 @@
 		86A16086E4B767E0A6E5C3BE /* LRQSearchViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 86A16DBFAB3872EF288FC280 /* LRQSearchViewController.h */; };
 		86A160AA8CB47FF4E9EA6064 /* LRQDemoSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A169648869D9F0E86D2A5F /* LRQDemoSectionController.m */; };
 		86A160ABEC061D8848155457 /* LRQSpinnerSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A1698D251E08C16B95043E /* LRQSpinnerSectionController.m */; };
+		86A160F074DD314E86BA2EF8 /* LRQEmptyViweController.h in Headers */ = {isa = PBXBuildFile; fileRef = 86A16C3E2BF220492DF5232B /* LRQEmptyViweController.h */; };
+		86A161184290E0A522133DE2 /* LRQRemoveSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A162117E5971D30BFD3531 /* LRQRemoveSectionController.m */; };
+		86A1611F32317398B7403AB4 /* LRQRemoveCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 86A16D67833954939601F000 /* LRQRemoveCell.h */; };
 		86A161855D60FF19D2A2CD65 /* LRQMixedDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A16CC56267410CA7B805B3 /* LRQMixedDataViewController.m */; };
 		86A161C7A1AD324CF8C0C974 /* LRQLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A16C2179E9D24ED9217973 /* LRQLabelCell.m */; };
 		86A16252552C1CEF5A752EB9 /* LRQExpandableSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A16CB651DC123F883DBAF7 /* LRQExpandableSectionController.m */; };
@@ -31,15 +34,18 @@
 		86A164F0ECD6F21C9FEAF66A /* LRQUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A1689C6AE9E6450024AEF7 /* LRQUser.m */; };
 		86A164FB13AD792C8385615C /* LRQSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A16CCA9B2DBADD02D3459C /* LRQSearchViewController.m */; };
 		86A16579EBDE8C72EBD736B9 /* LRQDetailLabelCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 86A1605787F28E1AEC696EDD /* LRQDetailLabelCell.h */; };
+		86A1657D007DB28C26C52827 /* LRQRemoveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A16710B37B0242C2763492 /* LRQRemoveCell.m */; };
 		86A166749F3047EAA15F7ECB /* LRQUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 86A163578BCF2E463443A4C7 /* LRQUser.h */; };
 		86A166C3A21F6C51904B3FA7 /* LRQLoadMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A169EC78CBEAD4431FA9F6 /* LRQLoadMoreViewController.m */; };
 		86A167EB336F1A663E3474B0 /* LRQSpinnerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A1620259C62D43109A383F /* LRQSpinnerCell.m */; };
 		86A168731D0157FC327796D8 /* LRQUserSectionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 86A16F7D04B88A31D6AE2D9B /* LRQUserSectionController.h */; };
 		86A16913B1F933DAFBACCA85 /* LRQGrideSectionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 86A16EC666F267D9A9AED0CC /* LRQGrideSectionController.h */; };
 		86A16961140B8619BEF3E1D9 /* LRQEmbeddedSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A167FDB960696122D71385 /* LRQEmbeddedSectionController.m */; };
+		86A169A762FC1098DAC701DB /* LRQRemoveSectionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 86A1690837ADF82E0029679B /* LRQRemoveSectionController.h */; };
 		86A16A081284FA9DE9741E82 /* LRQHorizontalSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A16C0A1A4010898016DDFD /* LRQHorizontalSectionController.m */; };
 		86A16A2B0B4C468D58F2B2F3 /* LRQEmbeddedSectionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 86A1604E52BD580C5AE27EBE /* LRQEmbeddedSectionController.h */; };
 		86A16A948407FE771CC44941 /* LRQGrideSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A16E9649A97E6DC6E3AEE1 /* LRQGrideSectionController.m */; };
+		86A16AED4399E35CE598F8A3 /* LRQEmptyViweController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A16547131B08527B4B0C8A /* LRQEmptyViweController.m */; };
 		86A16AF4A1B18673BC0EAC6D /* LRQLabelCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 86A164DB5B82B8C066EF9CAC /* LRQLabelCell.h */; };
 		86A16B0A3CA39201AC237100 /* LRQDemoSectionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 86A16B232FB6B01AF38E99EA /* LRQDemoSectionController.h */; };
 		86A16C26665E8851A5188056 /* LRQSpinnerSectionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 86A16ADD80E39D1090B12DE6 /* LRQSpinnerSectionController.h */; };
@@ -664,6 +670,7 @@
 		86A160F5BB0242DD96640A18 /* LRQEmbeddedCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRQEmbeddedCollectionViewCell.h; sourceTree = "<group>"; };
 		86A1620259C62D43109A383F /* LRQSpinnerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRQSpinnerCell.m; sourceTree = "<group>"; };
 		86A1620B8C152032F0923A1F /* LRQNestedAdapterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRQNestedAdapterViewController.h; sourceTree = "<group>"; };
+		86A162117E5971D30BFD3531 /* LRQRemoveSectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRQRemoveSectionController.m; sourceTree = "<group>"; };
 		86A1625B250F1DCD27C8A253 /* LRQEmbeddedCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRQEmbeddedCollectionViewCell.m; sourceTree = "<group>"; };
 		86A162CFF389C9319C9444F3 /* LRQHorizontalSectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRQHorizontalSectionController.h; sourceTree = "<group>"; };
 		86A163206CB58ED8FF1A7628 /* LRQLoadMoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRQLoadMoreViewController.h; sourceTree = "<group>"; };
@@ -672,11 +679,14 @@
 		86A164DB5B82B8C066EF9CAC /* LRQLabelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRQLabelCell.h; sourceTree = "<group>"; };
 		86A164E233456DEBCFFF335E /* LRQSpinnerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRQSpinnerCell.h; sourceTree = "<group>"; };
 		86A16523603BA0B4C8A7A6E5 /* LRQLabelSectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRQLabelSectionController.m; sourceTree = "<group>"; };
+		86A16547131B08527B4B0C8A /* LRQEmptyViweController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRQEmptyViweController.m; sourceTree = "<group>"; };
 		86A166D65CED3FA279975B30 /* LRQMixedDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRQMixedDataViewController.h; sourceTree = "<group>"; };
+		86A16710B37B0242C2763492 /* LRQRemoveCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRQRemoveCell.m; sourceTree = "<group>"; };
 		86A1673B485D499CF5033184 /* LRQLabelSectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRQLabelSectionController.h; sourceTree = "<group>"; };
 		86A167B55356E14A4AA77D67 /* LRQNestedAdapterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRQNestedAdapterViewController.m; sourceTree = "<group>"; };
 		86A167FDB960696122D71385 /* LRQEmbeddedSectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRQEmbeddedSectionController.m; sourceTree = "<group>"; };
 		86A1689C6AE9E6450024AEF7 /* LRQUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRQUser.m; sourceTree = "<group>"; };
+		86A1690837ADF82E0029679B /* LRQRemoveSectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRQRemoveSectionController.h; sourceTree = "<group>"; };
 		86A169648869D9F0E86D2A5F /* LRQDemoSectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRQDemoSectionController.m; sourceTree = "<group>"; };
 		86A1698D251E08C16B95043E /* LRQSpinnerSectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRQSpinnerSectionController.m; sourceTree = "<group>"; };
 		86A169EC78CBEAD4431FA9F6 /* LRQLoadMoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRQLoadMoreViewController.m; sourceTree = "<group>"; };
@@ -684,10 +694,12 @@
 		86A16B232FB6B01AF38E99EA /* LRQDemoSectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRQDemoSectionController.h; sourceTree = "<group>"; };
 		86A16C0A1A4010898016DDFD /* LRQHorizontalSectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRQHorizontalSectionController.m; sourceTree = "<group>"; };
 		86A16C2179E9D24ED9217973 /* LRQLabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRQLabelCell.m; sourceTree = "<group>"; };
+		86A16C3E2BF220492DF5232B /* LRQEmptyViweController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRQEmptyViweController.h; sourceTree = "<group>"; };
 		86A16CB651DC123F883DBAF7 /* LRQExpandableSectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRQExpandableSectionController.m; sourceTree = "<group>"; };
 		86A16CC56267410CA7B805B3 /* LRQMixedDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRQMixedDataViewController.m; sourceTree = "<group>"; };
 		86A16CCA9B2DBADD02D3459C /* LRQSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRQSearchViewController.m; sourceTree = "<group>"; };
 		86A16CF80E680AD8382D035C /* LRQUserSectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRQUserSectionController.m; sourceTree = "<group>"; };
+		86A16D67833954939601F000 /* LRQRemoveCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRQRemoveCell.h; sourceTree = "<group>"; };
 		86A16DBFAB3872EF288FC280 /* LRQSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRQSearchViewController.h; sourceTree = "<group>"; };
 		86A16E9649A97E6DC6E3AEE1 /* LRQGrideSectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRQGrideSectionController.m; sourceTree = "<group>"; };
 		86A16EC666F267D9A9AED0CC /* LRQGrideSectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRQGrideSectionController.h; sourceTree = "<group>"; };
@@ -1750,6 +1762,8 @@
 				86A1605787F28E1AEC696EDD /* LRQDetailLabelCell.h */,
 				86A1625B250F1DCD27C8A253 /* LRQEmbeddedCollectionViewCell.m */,
 				86A160F5BB0242DD96640A18 /* LRQEmbeddedCollectionViewCell.h */,
+				86A16710B37B0242C2763492 /* LRQRemoveCell.m */,
+				86A16D67833954939601F000 /* LRQRemoveCell.h */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1775,6 +1789,8 @@
 				86A162CFF389C9319C9444F3 /* LRQHorizontalSectionController.h */,
 				86A167FDB960696122D71385 /* LRQEmbeddedSectionController.m */,
 				86A1604E52BD580C5AE27EBE /* LRQEmbeddedSectionController.h */,
+				86A162117E5971D30BFD3531 /* LRQRemoveSectionController.m */,
+				86A1690837ADF82E0029679B /* LRQRemoveSectionController.h */,
 			);
 			path = LRQDemoSectionController;
 			sourceTree = "<group>";
@@ -1799,6 +1815,8 @@
 				86A166D65CED3FA279975B30 /* LRQMixedDataViewController.h */,
 				86A167B55356E14A4AA77D67 /* LRQNestedAdapterViewController.m */,
 				86A1620B8C152032F0923A1F /* LRQNestedAdapterViewController.h */,
+				86A16547131B08527B4B0C8A /* LRQEmptyViweController.m */,
+				86A16C3E2BF220492DF5232B /* LRQEmptyViweController.h */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -4644,6 +4662,9 @@
 				86A1636CFF024C12ED73EB47 /* LRQHorizontalSectionController.h in Headers */,
 				86A16FA1FC232C279BF21D35 /* LRQEmbeddedCollectionViewCell.h in Headers */,
 				86A16A2B0B4C468D58F2B2F3 /* LRQEmbeddedSectionController.h in Headers */,
+				86A160F074DD314E86BA2EF8 /* LRQEmptyViweController.h in Headers */,
+				86A169A762FC1098DAC701DB /* LRQRemoveSectionController.h in Headers */,
+				86A1611F32317398B7403AB4 /* LRQRemoveCell.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5102,6 +5123,9 @@
 				86A16A081284FA9DE9741E82 /* LRQHorizontalSectionController.m in Sources */,
 				86A16C39C6AC6CC718A92166 /* LRQEmbeddedCollectionViewCell.m in Sources */,
 				86A16961140B8619BEF3E1D9 /* LRQEmbeddedSectionController.m in Sources */,
+				86A16AED4399E35CE598F8A3 /* LRQEmptyViweController.m in Sources */,
+				86A161184290E0A522133DE2 /* LRQRemoveSectionController.m in Sources */,
+				86A1657D007DB28C26C52827 /* LRQRemoveCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
