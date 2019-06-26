@@ -61,7 +61,7 @@
     _datas = @[
       [[LRQDemoItem alloc] initWithName:@"Tail Loading" controllerClass:NSClassFromString(@"LRQLoadMoreViewController") controllerIdentifier:nil],
       [[LRQDemoItem alloc] initWithName:@"Search Autocomplete" controllerClass:NSClassFromString(@"LRQSearchViewController") controllerIdentifier:nil],
-      [[LRQDemoItem alloc] initWithName:@"Mixed Data" controllerClass:NSClassFromString(@"MixedDataViewController") controllerIdentifier:nil],
+      [[LRQDemoItem alloc] initWithName:@"Mixed Data" controllerClass:NSClassFromString(@"LRQMixedDataViewController") controllerIdentifier:nil],
       [[LRQDemoItem alloc] initWithName:@"Nested Adapter" controllerClass:NSClassFromString(@"NesteddapterViewController") controllerIdentifier:nil],
       [[LRQDemoItem alloc] initWithName:@"Empty View" controllerClass:NSClassFromString(@"EmptyViewController") controllerIdentifier:nil],
       [[LRQDemoItem alloc] initWithName:@"Single Section Controller" controllerClass:NSClassFromString(@"SingleSectionViewController") controllerIdentifier:nil],

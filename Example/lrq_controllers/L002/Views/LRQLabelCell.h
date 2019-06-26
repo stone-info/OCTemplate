@@ -7,5 +7,7 @@
 #import <IGListKit/IGListKit.h>
 
 @interface LRQLabelCell : UICollectionViewCell <IGListBindable>
-@property (nonatomic, copy) NSString *text;
++ (CGFloat)textHeight:(NSString *)text width:(CGFloat)width;
++ (CGFloat)singleLineHeight;
+@property (nonatomic, copy) NSString  *text;
 @end

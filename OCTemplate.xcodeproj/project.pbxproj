@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03F244D522BCD620000242C7 /* LRQCenterLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F244D422BCD620000242C7 /* LRQCenterLabelCell.m */; };
 		0F5C2FFBE7E1D06827A355D9 /* Pods_ExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC31F1EE1F169C853D173476 /* Pods_ExampleTests.framework */; };
 		608561BBEA9F67EA2DDFD332 /* Pods_OCTemplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC54A5FE914F17218E15BC9 /* Pods_OCTemplate.framework */; };
 		68AF8B32918C61D91FEB101C /* SNJSOCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 68AF80974338A8FFCB039626 /* SNJSOCModel.m */; };
@@ -14,19 +15,31 @@
 		86A16086E4B767E0A6E5C3BE /* LRQSearchViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 86A16DBFAB3872EF288FC280 /* LRQSearchViewController.h */; };
 		86A160AA8CB47FF4E9EA6064 /* LRQDemoSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A169648869D9F0E86D2A5F /* LRQDemoSectionController.m */; };
 		86A160ABEC061D8848155457 /* LRQSpinnerSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A1698D251E08C16B95043E /* LRQSpinnerSectionController.m */; };
+		86A161855D60FF19D2A2CD65 /* LRQMixedDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A16CC56267410CA7B805B3 /* LRQMixedDataViewController.m */; };
 		86A161C7A1AD324CF8C0C974 /* LRQLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A16C2179E9D24ED9217973 /* LRQLabelCell.m */; };
+		86A16252552C1CEF5A752EB9 /* LRQExpandableSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A16CB651DC123F883DBAF7 /* LRQExpandableSectionController.m */; };
+		86A162551606688F35E2BC77 /* LRQExpandableSectionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 86A16FD1838BD179731BE4D4 /* LRQExpandableSectionController.h */; };
 		86A1626940001F5FBF0F0FE6 /* LRQLoadMoreViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 86A163206CB58ED8FF1A7628 /* LRQLoadMoreViewController.h */; };
 		86A162D0904C07C02FFA1811 /* LRQLabelSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A16523603BA0B4C8A7A6E5 /* LRQLabelSectionController.m */; };
+		86A162FD2A1032F761D277FA /* LRQMixedDataViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 86A166D65CED3FA279975B30 /* LRQMixedDataViewController.h */; };
 		86A1634ED4B810D45F46A080 /* LRQLabelSectionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 86A1673B485D499CF5033184 /* LRQLabelSectionController.h */; };
 		86A163DD15ADDDC854695245 /* LRQSearchSectionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 86A16F30BA92256769BFE9E8 /* LRQSearchSectionController.h */; };
+		86A163E8B129F84D3FE32F48 /* LRQDetailLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A1634640A58DED1C8E514D /* LRQDetailLabelCell.m */; };
 		86A1649A3C44A49585A6846D /* LRQSpinnerCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 86A164E233456DEBCFFF335E /* LRQSpinnerCell.h */; };
+		86A164F0ECD6F21C9FEAF66A /* LRQUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A1689C6AE9E6450024AEF7 /* LRQUser.m */; };
 		86A164FB13AD792C8385615C /* LRQSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A16CCA9B2DBADD02D3459C /* LRQSearchViewController.m */; };
+		86A16579EBDE8C72EBD736B9 /* LRQDetailLabelCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 86A1605787F28E1AEC696EDD /* LRQDetailLabelCell.h */; };
+		86A166749F3047EAA15F7ECB /* LRQUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 86A163578BCF2E463443A4C7 /* LRQUser.h */; };
 		86A166C3A21F6C51904B3FA7 /* LRQLoadMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A169EC78CBEAD4431FA9F6 /* LRQLoadMoreViewController.m */; };
 		86A167EB336F1A663E3474B0 /* LRQSpinnerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A1620259C62D43109A383F /* LRQSpinnerCell.m */; };
+		86A168731D0157FC327796D8 /* LRQUserSectionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 86A16F7D04B88A31D6AE2D9B /* LRQUserSectionController.h */; };
+		86A16913B1F933DAFBACCA85 /* LRQGrideSectionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 86A16EC666F267D9A9AED0CC /* LRQGrideSectionController.h */; };
+		86A16A948407FE771CC44941 /* LRQGrideSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A16E9649A97E6DC6E3AEE1 /* LRQGrideSectionController.m */; };
 		86A16AF4A1B18673BC0EAC6D /* LRQLabelCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 86A164DB5B82B8C066EF9CAC /* LRQLabelCell.h */; };
 		86A16B0A3CA39201AC237100 /* LRQDemoSectionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 86A16B232FB6B01AF38E99EA /* LRQDemoSectionController.h */; };
 		86A16C26665E8851A5188056 /* LRQSpinnerSectionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 86A16ADD80E39D1090B12DE6 /* LRQSpinnerSectionController.h */; };
 		86A16E3EF5E546C0C229A905 /* LRQSearchSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A16FB34F094772D28AC79E /* LRQSearchSectionController.m */; };
+		86A16F8D71E7001DFE4CEBA9 /* LRQUserSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A16CF80E680AD8382D035C /* LRQUserSectionController.m */; };
 		8EE258CA22A16F8B00D2AFEA /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE258C922A16F8B00D2AFEA /* JavaScriptCore.framework */; };
 		8EE258CC22A18D4300D2AFEA /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 8EE258CB22A18D4200D2AFEA /* test.html */; };
 		8EE258CE22A18DEB00D2AFEA /* test1.html in Resources */ = {isa = PBXBuildFile; fileRef = 8EE258CD22A18DEA00D2AFEA /* test1.html */; };
@@ -626,6 +639,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03F244D322BCD620000242C7 /* LRQCenterLabelCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRQCenterLabelCell.h; sourceTree = "<group>"; };
+		03F244D422BCD620000242C7 /* LRQCenterLabelCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRQCenterLabelCell.m; sourceTree = "<group>"; };
 		1FFF79F65B7EDEEC99571D36 /* Pods_ExampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C5722BBC92E11F0CCCCBEC7 /* Pods-ExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-ExampleTests/Pods-ExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3CC54A5FE914F17218E15BC9 /* Pods_OCTemplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCTemplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -636,22 +651,34 @@
 		68AF84EBA0DF13776940C64E /* SNJSOCModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNJSOCModel.h; sourceTree = "<group>"; };
 		79A9D1935764F6F2F40C723F /* Pods-ExampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleUITests.debug.xcconfig"; path = "Target Support Files/Pods-ExampleUITests/Pods-ExampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7DCA7AEA63956E8A25D745A7 /* Pods-OCTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCTemplate.debug.xcconfig"; path = "Target Support Files/Pods-OCTemplate/Pods-OCTemplate.debug.xcconfig"; sourceTree = "<group>"; };
+		86A1605787F28E1AEC696EDD /* LRQDetailLabelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRQDetailLabelCell.h; sourceTree = "<group>"; };
 		86A1620259C62D43109A383F /* LRQSpinnerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRQSpinnerCell.m; sourceTree = "<group>"; };
 		86A163206CB58ED8FF1A7628 /* LRQLoadMoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRQLoadMoreViewController.h; sourceTree = "<group>"; };
+		86A1634640A58DED1C8E514D /* LRQDetailLabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRQDetailLabelCell.m; sourceTree = "<group>"; };
+		86A163578BCF2E463443A4C7 /* LRQUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRQUser.h; sourceTree = "<group>"; };
 		86A164DB5B82B8C066EF9CAC /* LRQLabelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRQLabelCell.h; sourceTree = "<group>"; };
 		86A164E233456DEBCFFF335E /* LRQSpinnerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRQSpinnerCell.h; sourceTree = "<group>"; };
 		86A16523603BA0B4C8A7A6E5 /* LRQLabelSectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRQLabelSectionController.m; sourceTree = "<group>"; };
+		86A166D65CED3FA279975B30 /* LRQMixedDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRQMixedDataViewController.h; sourceTree = "<group>"; };
 		86A1673B485D499CF5033184 /* LRQLabelSectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRQLabelSectionController.h; sourceTree = "<group>"; };
+		86A1689C6AE9E6450024AEF7 /* LRQUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRQUser.m; sourceTree = "<group>"; };
 		86A169648869D9F0E86D2A5F /* LRQDemoSectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRQDemoSectionController.m; sourceTree = "<group>"; };
 		86A1698D251E08C16B95043E /* LRQSpinnerSectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRQSpinnerSectionController.m; sourceTree = "<group>"; };
 		86A169EC78CBEAD4431FA9F6 /* LRQLoadMoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRQLoadMoreViewController.m; sourceTree = "<group>"; };
 		86A16ADD80E39D1090B12DE6 /* LRQSpinnerSectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRQSpinnerSectionController.h; sourceTree = "<group>"; };
 		86A16B232FB6B01AF38E99EA /* LRQDemoSectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRQDemoSectionController.h; sourceTree = "<group>"; };
 		86A16C2179E9D24ED9217973 /* LRQLabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRQLabelCell.m; sourceTree = "<group>"; };
+		86A16CB651DC123F883DBAF7 /* LRQExpandableSectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRQExpandableSectionController.m; sourceTree = "<group>"; };
+		86A16CC56267410CA7B805B3 /* LRQMixedDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRQMixedDataViewController.m; sourceTree = "<group>"; };
 		86A16CCA9B2DBADD02D3459C /* LRQSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRQSearchViewController.m; sourceTree = "<group>"; };
+		86A16CF80E680AD8382D035C /* LRQUserSectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRQUserSectionController.m; sourceTree = "<group>"; };
 		86A16DBFAB3872EF288FC280 /* LRQSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRQSearchViewController.h; sourceTree = "<group>"; };
+		86A16E9649A97E6DC6E3AEE1 /* LRQGrideSectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRQGrideSectionController.m; sourceTree = "<group>"; };
+		86A16EC666F267D9A9AED0CC /* LRQGrideSectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRQGrideSectionController.h; sourceTree = "<group>"; };
 		86A16F30BA92256769BFE9E8 /* LRQSearchSectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRQSearchSectionController.h; sourceTree = "<group>"; };
+		86A16F7D04B88A31D6AE2D9B /* LRQUserSectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRQUserSectionController.h; sourceTree = "<group>"; };
 		86A16FB34F094772D28AC79E /* LRQSearchSectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRQSearchSectionController.m; sourceTree = "<group>"; };
+		86A16FD1838BD179731BE4D4 /* LRQExpandableSectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRQExpandableSectionController.h; sourceTree = "<group>"; };
 		8EE258C922A16F8B00D2AFEA /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		8EE258CB22A18D4200D2AFEA /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
 		8EE258CD22A18DEA00D2AFEA /* test1.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test1.html; sourceTree = "<group>"; };
@@ -1701,6 +1728,10 @@
 				86A164DB5B82B8C066EF9CAC /* LRQLabelCell.h */,
 				86A1620259C62D43109A383F /* LRQSpinnerCell.m */,
 				86A164E233456DEBCFFF335E /* LRQSpinnerCell.h */,
+				03F244D322BCD620000242C7 /* LRQCenterLabelCell.h */,
+				03F244D422BCD620000242C7 /* LRQCenterLabelCell.m */,
+				86A1634640A58DED1C8E514D /* LRQDetailLabelCell.m */,
+				86A1605787F28E1AEC696EDD /* LRQDetailLabelCell.h */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1716,8 +1747,23 @@
 				86A16ADD80E39D1090B12DE6 /* LRQSpinnerSectionController.h */,
 				86A16FB34F094772D28AC79E /* LRQSearchSectionController.m */,
 				86A16F30BA92256769BFE9E8 /* LRQSearchSectionController.h */,
+				86A16E9649A97E6DC6E3AEE1 /* LRQGrideSectionController.m */,
+				86A16EC666F267D9A9AED0CC /* LRQGrideSectionController.h */,
+				86A16CB651DC123F883DBAF7 /* LRQExpandableSectionController.m */,
+				86A16FD1838BD179731BE4D4 /* LRQExpandableSectionController.h */,
+				86A16CF80E680AD8382D035C /* LRQUserSectionController.m */,
+				86A16F7D04B88A31D6AE2D9B /* LRQUserSectionController.h */,
 			);
 			path = LRQDemoSectionController;
+			sourceTree = "<group>";
+		};
+		86A169066B91F97D38A7A30B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				86A1689C6AE9E6450024AEF7 /* LRQUser.m */,
+				86A163578BCF2E463443A4C7 /* LRQUser.h */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		86A16F29C9527497A781FA4E /* ViewControllers */ = {
@@ -1727,6 +1773,8 @@
 				86A163206CB58ED8FF1A7628 /* LRQLoadMoreViewController.h */,
 				86A16CCA9B2DBADD02D3459C /* LRQSearchViewController.m */,
 				86A16DBFAB3872EF288FC280 /* LRQSearchViewController.h */,
+				86A16CC56267410CA7B805B3 /* LRQMixedDataViewController.m */,
+				86A166D65CED3FA279975B30 /* LRQMixedDataViewController.h */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -4184,6 +4232,7 @@
 				86A16433079363ED62CB2983 /* LRQDemoSectionController */,
 				86A16055E701AD17070DCBAF /* Views */,
 				86A16F29C9527497A781FA4E /* ViewControllers */,
+				86A169066B91F97D38A7A30B /* Models */,
 			);
 			path = L002;
 			sourceTree = "<group>";
@@ -4561,6 +4610,12 @@
 				86A1649A3C44A49585A6846D /* LRQSpinnerCell.h in Headers */,
 				86A16086E4B767E0A6E5C3BE /* LRQSearchViewController.h in Headers */,
 				86A163DD15ADDDC854695245 /* LRQSearchSectionController.h in Headers */,
+				86A162FD2A1032F761D277FA /* LRQMixedDataViewController.h in Headers */,
+				86A16913B1F933DAFBACCA85 /* LRQGrideSectionController.h in Headers */,
+				86A166749F3047EAA15F7ECB /* LRQUser.h in Headers */,
+				86A162551606688F35E2BC77 /* LRQExpandableSectionController.h in Headers */,
+				86A168731D0157FC327796D8 /* LRQUserSectionController.h in Headers */,
+				86A16579EBDE8C72EBD736B9 /* LRQDetailLabelCell.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5009,6 +5064,12 @@
 				86A167EB336F1A663E3474B0 /* LRQSpinnerCell.m in Sources */,
 				86A164FB13AD792C8385615C /* LRQSearchViewController.m in Sources */,
 				86A16E3EF5E546C0C229A905 /* LRQSearchSectionController.m in Sources */,
+				86A161855D60FF19D2A2CD65 /* LRQMixedDataViewController.m in Sources */,
+				86A16A948407FE771CC44941 /* LRQGrideSectionController.m in Sources */,
+				86A164F0ECD6F21C9FEAF66A /* LRQUser.m in Sources */,
+				86A16252552C1CEF5A752EB9 /* LRQExpandableSectionController.m in Sources */,
+				86A16F8D71E7001DFE4CEBA9 /* LRQUserSectionController.m in Sources */,
+				86A163E8B129F84D3FE32F48 /* LRQDetailLabelCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5078,6 +5139,7 @@
 				8EE2C1AD2295BFAF001F639B /* L013ViewController.m in Sources */,
 				8EE2BE962295BF3F001F639B /* T055ViewController.m in Sources */,
 				8EE2B5B22295BB9E001F639B /* ExampleConsts.m in Sources */,
+				03F244D522BCD620000242C7 /* LRQCenterLabelCell.m in Sources */,
 				8EE2BF832295BF3F001F639B /* T029SubViewController.m in Sources */,
 				8EE2BF432295BF3F001F639B /* SNFlowLayoutV2.m in Sources */,
 				8EE2BEA52295BF3F001F639B /* T081TopModel.m in Sources */,
