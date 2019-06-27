@@ -53,7 +53,10 @@ target 'Example' do
   pod 'KVOController', '~> 1.2.0'
   
   pod 'UITableView+FDTemplateLayoutCell'
-  
+
+  # pod 'Valet', '2.4.2'
+  #  pod 'Valet' ,'3.2.3'
+
   target 'ExampleTests' do
     inherit! :search_paths
     # Pods for testing

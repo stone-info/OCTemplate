@@ -116,9 +116,9 @@
   // kScreenWidth, kScreenHeight - (kStatusBarHeight + kNavigationBarHeight));
   [scrollView addSubview:imageView];
 
-  NSLogPoint(scrollView.contentOffset)
+  NSLogPoint(scrollView.contentOffset);
 
-      [self.view addSubview:scrollView];
+  [self.view addSubview:scrollView];
 }
 
 - (void)injected {

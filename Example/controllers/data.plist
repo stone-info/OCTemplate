@@ -829,18 +829,18 @@
       <false/>
     </dict>
 
-<!--    <dict>-->
-<!--      <key>title</key>-->
-<!--      <string>mui 测试</string>-->
-<!--      <key>controllerName</key>-->
-<!--      <string>T088ViewController</string>-->
-<!--      <key>xib</key>-->
-<!--      <false/>-->
-<!--      <key>storyboard</key>-->
-<!--      <false/>-->
-<!--      <key>important</key>-->
-<!--      <false/>-->
-<!--    </dict>-->
+    <dict>
+      <key>title</key>
+      <string>Valet 测试</string>
+      <key>controllerName</key>
+      <string>T088ViewController</string>
+      <key>xib</key>
+      <false/>
+      <key>storyboard</key>
+      <false/>
+      <key>important</key>
+      <false/>
+    </dict>
 
   </array>
 </plist>

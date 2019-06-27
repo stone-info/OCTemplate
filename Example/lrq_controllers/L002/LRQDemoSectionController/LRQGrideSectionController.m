@@ -7,7 +7,7 @@
 
 #import <IGListKit/IGListSectionControllerInternal.h>
 #import "LRQGrideSectionController.h"
-#import "../../../../../../Library/Caches/AppCode2019.1/DerivedData/OCTemplate-cpciolpkulmulrcehvdtlfvkigih/Build/Products/Debug-iphonesimulator/MJExtension/MJExtension.framework/Headers/MJExtension.h"
+#import <MJExtension/MJExtension.h>
 #import "LRQCenterLabelCell.h"
 
 @interface LRQGrideSectionController ()
