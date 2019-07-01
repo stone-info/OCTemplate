@@ -65,8 +65,9 @@
       [[LRQDemoItem alloc] initWithName:@"Mixed Data" controllerClass:NSClassFromString(@"LRQMixedDataViewController") controllerIdentifier:nil],
       [[LRQDemoItem alloc] initWithName:@"Nested Adapter" controllerClass:NSClassFromString(@"LRQNestedAdapterViewController") controllerIdentifier:nil],
       [[LRQDemoItem alloc] initWithName:@"Empty View" controllerClass:NSClassFromString(@"LRQEmptyViweController") controllerIdentifier:nil],
-      [[LRQDemoItem alloc] initWithName:@"Single Section Controller" controllerClass:NSClassFromString(@"SingleSectionViewController") controllerIdentifier:nil],
-      [[LRQDemoItem alloc] initWithName:@"Storyboard" controllerClass:NSClassFromString(@"SingleSectionViewController") controllerIdentifier:@"demo"],
+      [[LRQDemoItem alloc] initWithName:@"Single Section Controller" controllerClass:NSClassFromString(@"LRQSingleSectionViewController") controllerIdentifier:nil],
+      [[LRQDemoItem alloc] initWithName:@"Storyboard" controllerClass:NSClassFromString(@"LRQStoryboardViewController") controllerIdentifier:@"demo"],
+      [[LRQDemoItem alloc] initWithName:@"Single Section Storyboard" controllerClass:NSClassFromString(@"LRQSingleSectionStoryboardViewController") controllerIdentifier:@"singleSectionDemo"],
     ];
   }
   return _datas;
