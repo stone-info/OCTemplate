@@ -56,6 +56,7 @@ target 'Example' do
 
   # pod 'Valet', '2.4.2'
   #  pod 'Valet' ,'3.2.3'
+   pod 'Valet' ,'3.2.5'
 
   target 'ExampleTests' do
     inherit! :search_paths
