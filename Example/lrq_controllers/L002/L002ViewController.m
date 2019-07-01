@@ -67,6 +67,7 @@
       [[LRQDemoItem alloc] initWithName:@"Empty View" controllerClass:NSClassFromString(@"LRQEmptyViweController") controllerIdentifier:nil],
       [[LRQDemoItem alloc] initWithName:@"Single Section Controller" controllerClass:NSClassFromString(@"LRQSingleSectionViewController") controllerIdentifier:nil],
       [[LRQDemoItem alloc] initWithName:@"Storyboard" controllerClass:NSClassFromString(@"LRQStoryboardViewController") controllerIdentifier:@"demo"],
+      [[LRQDemoItem alloc] initWithName:@"Single Section Storyboard" controllerClass:NSClassFromString(@"LRQSingleSectionStoryboardViewController") controllerIdentifier:@"singleSectionDemo"],
     ];
   }
   return _datas;
