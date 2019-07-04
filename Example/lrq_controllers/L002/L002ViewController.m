@@ -68,6 +68,7 @@
       [[LRQDemoItem alloc] initWithName:@"Single Section Controller" controllerClass:NSClassFromString(@"LRQSingleSectionViewController") controllerIdentifier:nil],
       [[LRQDemoItem alloc] initWithName:@"Storyboard" controllerClass:NSClassFromString(@"LRQStoryboardViewController") controllerIdentifier:@"demo"],
       [[LRQDemoItem alloc] initWithName:@"Single Section Storyboard" controllerClass:NSClassFromString(@"LRQSingleSectionStoryboardViewController") controllerIdentifier:@"singleSectionDemo"],
+      [[LRQDemoItem alloc] initWithName:@"Working Range" controllerClass:NSClassFromString(@"LRQWorkingRangeViewController") controllerIdentifier:nil],
     ];
   }
   return _datas;
