@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="T089Cell">
+            <rect key="frame" x="0.0" y="0.0" width="597" height="250"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="597" height="250"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fTT-Ug-ZRG">
+                        <rect key="frame" x="0.0" y="0.0" width="218.5" height="250"/>
+                        <color key="backgroundColor" red="0.94509803920000002" green="0.61960784310000006" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wai-Rq-8yR">
+                        <rect key="frame" x="378.5" y="0.0" width="218.5" height="250"/>
+                        <color key="backgroundColor" red="0.63921568630000003" green="0.85098039219999999" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G58-SH-PnN" userLabel="separatorView">
+                        <rect key="frame" x="0.0" y="249" width="597" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Zwy-Nr-Hnh"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="wai-Rq-8yR" firstAttribute="width" secondItem="fTT-Ug-ZRG" secondAttribute="width" id="5P6-fo-O6p"/>
+                <constraint firstItem="wai-Rq-8yR" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="EyE-h6-5uu"/>
+                <constraint firstItem="fTT-Ug-ZRG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="FS8-LJ-ffZ"/>
+                <constraint firstAttribute="trailing" secondItem="wai-Rq-8yR" secondAttribute="trailing" id="XYz-fP-cJN"/>
+                <constraint firstAttribute="bottom" secondItem="G58-SH-PnN" secondAttribute="bottom" id="ZMa-x9-QPs"/>
+                <constraint firstAttribute="bottom" secondItem="fTT-Ug-ZRG" secondAttribute="bottom" id="fQb-qe-vnA"/>
+                <constraint firstItem="wai-Rq-8yR" firstAttribute="leading" secondItem="fTT-Ug-ZRG" secondAttribute="trailing" constant="160" id="mLe-vS-hDi"/>
+                <constraint firstItem="fTT-Ug-ZRG" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="nAB-A6-fyX"/>
+                <constraint firstItem="G58-SH-PnN" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="oqY-EY-mF4"/>
+                <constraint firstAttribute="bottom" secondItem="wai-Rq-8yR" secondAttribute="bottom" id="ot6-1C-6UF"/>
+                <constraint firstAttribute="trailing" secondItem="G58-SH-PnN" secondAttribute="trailing" id="tST-kj-7o5"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="597" height="250"/>
+            <connections>
+                <outlet property="leftView" destination="fTT-Ug-ZRG" id="Gao-uh-j2c"/>
+                <outlet property="rightView" destination="wai-Rq-8yR" id="MXq-pp-7ry"/>
+            </connections>
+            <point key="canvasLocation" x="-21.014492753623191" y="205.58035714285714"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -842,5 +842,18 @@
       <false/>
     </dict>
 
+    <dict>
+      <key>title</key>
+      <string>collection view 手势冲突 测试</string>
+      <key>controllerName</key>
+      <string>T089ViewController</string>
+      <key>xib</key>
+      <false/>
+      <key>storyboard</key>
+      <false/>
+      <key>important</key>
+      <false/>
+    </dict>
+
   </array>
 </plist>
