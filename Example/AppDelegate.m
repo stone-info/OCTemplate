@@ -10,7 +10,6 @@
 #import "ExampleConsts.h"
 #import "SNTabBarController.h"
 #import "SNWindow.h"
-
 @interface AppDelegate ()
 
 @end
@@ -22,6 +21,7 @@
   // Override point for customization after application launch.
   
   [[NSBundle bundleWithPath:@"/Applications/InjectionIII.app/Contents/Resources/iOSInjection.bundle"] load];
+
   // init data
   [SNConst new];
   

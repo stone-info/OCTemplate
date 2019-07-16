@@ -108,7 +108,6 @@ GLog(@"%s.%@ = %@", #obj, name, [obj valueForKey:name]);\
 ENDLog(@"GROUP END ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")\
 } while (0);
 
-
 #define printMethods(kls) \
 do {\
 STARTLog(@"GROUP START ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")\
@@ -144,7 +143,16 @@ printf("\033[1;7;48m -[%-50s]\t\t%-10s%20s \033[0m\n", methodName.UTF8String, kS
 ENDLog(@"GROUP END ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")\
 } while (0);
 
+//                              /* runtime print */
+/************************************************************************************/
+UIKIT_EXTERN UIImage *kImageCutCircle(UIImage *image);
 
+UIKIT_EXTERN UIImage *kImageCutCircleWithBorder(UIImage *image, CGFloat borderWidth, UIColor *borderColor);
+
+
+
+
+/***  end  *********************************************************************************/
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SNGlobalFunctions : NSObject

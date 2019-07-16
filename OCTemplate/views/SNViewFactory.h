@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+UIKIT_EXTERN UIView *makeView(BOOL board);
+
 UIKIT_EXTERN UILabel *makeLabel(BOOL board);
 
 UIKIT_EXTERN UIButton *makeButton(BOOL board);

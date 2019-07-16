@@ -12,11 +12,10 @@
 
 - (instancetype)watermarkWithCallback:(void (^)(void))callback;
 
-- (instancetype)borderCircleImageWithBorderWidth:(CGFloat)borderWidth
-                                     borderColor:(UIColor *)borderColor;
+- (instancetype)borderCircleImageWithBorderWidth:(CGFloat)borderWidth borderColor:(UIColor *)borderColor;
+
 @end
 
-
 @interface UIImage (StretchExtentsion)
-+(instancetype)resizableImageWithLocalImageName:(NSString *)localImageName;
++ (instancetype)resizableImageWithLocalImageName:(NSString *)localImageName;
 @end

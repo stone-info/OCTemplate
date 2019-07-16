@@ -86,3 +86,9 @@ FOUNDATION_EXPORT const unsigned char OCTemplateVersionString[];
 #import <OCTemplate/UIView+Common.h>
 #import <OCTemplate/UIView+Base.h>
 #import <OCTemplate/RegExCategories.h>
+
+
+// tool
+#import <OCTemplate/SNAnimation.h>
+
+//#import "SNAnimation.h"

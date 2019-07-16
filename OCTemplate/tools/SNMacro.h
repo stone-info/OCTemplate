@@ -257,4 +257,5 @@ return self;                                                       \
 // #endif
 
 
+
 #endif /* SNMacro_h */

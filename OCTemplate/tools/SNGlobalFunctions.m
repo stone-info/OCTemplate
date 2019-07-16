@@ -91,8 +91,6 @@ __kindof UICollectionViewCell *dequeueForCollectionCell(__kindof UICollectionVie
   return [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass(itemClass) forIndexPath:indexPath];
 }
 
-
-
 UIFont *kPingFangSCRegular(CGFloat size) {
   return [UIFont fontWithName:@"PingFangSC-Regular" size:size];
 }
@@ -161,6 +159,72 @@ NSString *toStringCGPoint(CGPoint value) { return NSStringFromCGPoint(value); }
 
 NSString *toStringClass(Class value) { return NSStringFromClass(value); }
 
+UIImage *kImageCutCircle(UIImage *image) {
+  UIGraphicsBeginImageContextWithOptions(image.size, NO, 0);
+  UIBezierPath *path = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(0, 0, image.size.width, image.size.height)];
+  [path addClip];
+  [image drawAtPoint:CGPointZero];
+  UIImage *uiImage = UIGraphicsGetImageFromCurrentImageContext();
+  UIGraphicsEndImageContext();
+  return uiImage;
+}
+
+/**
+ * 图片切缘 带 边框
+ * 应用场景, 图片切缘 也想要圆之外区域的时候
+ * @param image
+ * @param borderWidth
+ * @param borderColor
+ * @return
+ */
+UIImage *kImageCutCircleWithBorder(UIImage *image, CGFloat borderWidth, UIColor *borderColor) {
+
+  CGFloat radius = MIN(image.size.width, image.size.height) * 0.5;
+  CGSize size = CGSizeMake((radius + borderWidth) * 2, (radius + borderWidth) * 2);
+
+  UIGraphicsBeginImageContextWithOptions(size, NO, 0);
+  {
+    UIBezierPath *path = [UIBezierPath bezierPathWithArcCenter:CGPointMake(size.width * 0.5, size.height * 0.5)
+                                       radius:size.width * 0.5
+                                       startAngle:kDegreesToRadian(0)
+                                       endAngle:kDegreesToRadian(360)
+                                       clockwise:YES];
+    // UIBezierPath *path = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(0, 0, size.width, size.height)];
+    [borderColor set];
+    [path fill];
+  }
+
+  {
+    UIBezierPath *path = [UIBezierPath bezierPathWithArcCenter:CGPointMake(size.width * 0.5, size.height * 0.5)
+                                       radius:size.width * 0.5 - borderWidth
+                                       startAngle:kDegreesToRadian(0)
+                                       endAngle:kDegreesToRadian(360)
+                                       clockwise:YES];
+    // UIBezierPath *path = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(borderWidth, borderWidth, self.size.width, self.size.height)];
+    [path addClip];
+  }
+
+  // [self drawAtPoint:CGPointMake(borderWidth, borderWidth)];
+  [image drawAtPoint:CGPointMake(borderWidth - (image.size.width * 0.5 - radius), borderWidth - (image.size.height * 0.5 - radius))];
+
+  UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+
+  UIGraphicsEndImageContext();
+
+  return newImage;
+}
+
+// + (UIImage *(^)(UIImage *))imageCutCircle {
+// return ^UIImage *(UIImage *image) {
+// UIGraphicsBeginImageContextWithOptions(image.size, NO, 0);
+// UIBezierPath *path = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(0, 0, image.size.width, image.size.height)];
+// [path addClip];
+// [image drawAtPoint:CGPointZero];
+// UIImage *uiImage = UIGraphicsGetImageFromCurrentImageContext();
+// UIGraphicsEndImageContext();
+// return uiImage;
+// };
+// }
 
 
 // 无参和有LOG的不做 全局函数

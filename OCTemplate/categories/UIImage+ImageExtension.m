@@ -8,6 +8,7 @@
 
 #import "UIImage+ImageExtension.h"
 #import "SNGlobalFunctions.h"
+
 @implementation UIImage (ImageExtension)
 // 使用例子
 // UIImage *image = [UIImage imageNamed:@"temp"];
@@ -30,8 +31,8 @@
   UIGraphicsEndImageContext();
   return newImage;
 }
-- (instancetype)borderCircleImageWithBorderWidth:(CGFloat)borderWidth
-                                     borderColor:(UIColor *)borderColor {
+
+- (instancetype)borderCircleImageWithBorderWidth:(CGFloat)borderWidth borderColor:(UIColor *)borderColor {
 
   // if (self.size.width != self.size.height) {
   //
@@ -43,10 +44,10 @@
   UIGraphicsBeginImageContextWithOptions(size, NO, 0);
   {
     UIBezierPath *path = [UIBezierPath bezierPathWithArcCenter:CGPointMake(size.width * 0.5, size.height * 0.5)
-                                                        radius:size.width * 0.5
-                                                    startAngle:kDegreesToRadian(0)
-                                                      endAngle:kDegreesToRadian(360)
-                                                     clockwise:YES];
+                                       radius:size.width * 0.5
+                                       startAngle:kDegreesToRadian(0)
+                                       endAngle:kDegreesToRadian(360)
+                                       clockwise:YES];
     // UIBezierPath *path = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(0, 0, size.width, size.height)];
     [borderColor set];
     [path fill];
@@ -54,16 +55,16 @@
 
   {
     UIBezierPath *path = [UIBezierPath bezierPathWithArcCenter:CGPointMake(size.width * 0.5, size.height * 0.5)
-                                                        radius:size.width * 0.5 - borderWidth
-                                                    startAngle:kDegreesToRadian(0)
-                                                      endAngle:kDegreesToRadian(360)
-                                                     clockwise:YES];
+                                       radius:size.width * 0.5 - borderWidth
+                                       startAngle:kDegreesToRadian(0)
+                                       endAngle:kDegreesToRadian(360)
+                                       clockwise:YES];
     // UIBezierPath *path = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(borderWidth, borderWidth, self.size.width, self.size.height)];
     [path addClip];
   }
 
   // [self drawAtPoint:CGPointMake(borderWidth, borderWidth)];
-  [self drawAtPoint:CGPointMake(borderWidth-(self.size.width*0.5-radius), borderWidth-(self.size.height*0.5-radius))];
+  [self drawAtPoint:CGPointMake(borderWidth - (self.size.width * 0.5 - radius), borderWidth - (self.size.height * 0.5 - radius))];
 
   UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
 
@@ -73,10 +74,9 @@
 }
 @end
 
-
 @implementation UIImage (StretchExtentsion)
 + (instancetype)resizableImageWithLocalImageName:(NSString *)localImageName {
-  UIImage *image = [UIImage imageNamed:localImageName];
+  UIImage *image      = [UIImage imageNamed:localImageName];
   CGFloat imageWidth  = image.size.width;
   CGFloat imageHeight = image.size.height;
 
