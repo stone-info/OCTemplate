@@ -826,6 +826,7 @@
 		86A16F7D04B88A31D6AE2D9B /* LRQUserSectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRQUserSectionController.h; sourceTree = "<group>"; };
 		86A16FB34F094772D28AC79E /* LRQSearchSectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRQSearchSectionController.m; sourceTree = "<group>"; };
 		86A16FD1838BD179731BE4D4 /* LRQExpandableSectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRQExpandableSectionController.h; sourceTree = "<group>"; };
+		8E0BA8F822E16F54004A97D2 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
 		8E918A0322CC466500406318 /* T089Cell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = T089Cell.h; sourceTree = "<group>"; };
 		8E918A0422CC466500406318 /* T089Cell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = T089Cell.m; sourceTree = "<group>"; };
 		8E918A0522CC466500406318 /* T089Cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = T089Cell.xib; sourceTree = "<group>"; };
@@ -2641,6 +2642,7 @@
 		8EE2B4F62295B3E9001F639B = {
 			isa = PBXGroup;
 			children = (
+				8E0BA8F822E16F54004A97D2 /* assets */,
 				8EE2C2A422974B95001F639B /* OCTemplate.podspec */,
 				8EE2C270229638CC001F639B /* README.md */,
 				8EA9D90822DB34A800CEF8BB /* build.scpt */,
