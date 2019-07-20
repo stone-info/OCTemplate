@@ -121,3 +121,139 @@ https://www.cnblogs.com/QM80/p/3576282.html
 ## animation
 
 ![animation](./assets/animation.png)
+
+
+---
+
+
+## 转场动画过度效果
+
+| 类型字符串 | 效果说明 | 关键字 | 方向 |
+| :------:  | :------: | :------: | :------: |
+| fade    |   交叉淡化过渡 |  YES  |
+| push    |   新视图把旧视图推出去 |  YES  |
+| moveIn    |   新视图移到旧视图上面 |  YES  |
+| reveal    |   将旧视图移开,显示下面的新视图  |  YES  |
+| cube    |  立方体翻滚效果 |
+| oglFlip    |  上下左右翻转效果 |
+| suckEffect    |  收缩效果，如一块布被抽走 |  | NO|
+| rippleEffect    |  水滴效果 |  | NO|
+| pageCurl    |  向上翻页效果 |  | |
+| pageUnCurl    |  向下翻页效果 |  | |
+| cameraIrisHollowOpen    |  相机镜头打开效果 |  | NO |
+| cameraIrisHollowClose    |  相机镜头关闭效果 |  | NO |
+
+---
+
+## view.layer.shouldRasterize = YES(光栅化)的使用 及图片性能整理
+https://blog.csdn.net/lg767201403/article/details/50960909
+
+---
+
+## UIEvent详解:远程控制,运动控制和触摸事件
+
+UIEvent对象代表一个事件。在iOS中，主要有三种事件：触摸事件，运动事件，远程控制事件。远程控制事件主要是外部辅助设备或者耳机的远程命令，例如控制音乐声音的大小，或者下一首歌。运动事件主要是晃动设备等。
+
+触摸事件包括一个或者多个触摸(touches), 每个触摸有一个UITouch对象表示。当触摸事件发生时，系统会通过触摸处理的逻辑找到合适的responder并把UIEvent对象传递过去。responder通过touchesBegan:withEvent:等方法去接收UIEvent对象。
+
+**UIResponser都能接收事件,系统提供了几个方法接收UIEvent**
+
+```objectivec
+    //触摸
+    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
+    }
+    
+    override func touchesMoved(touches: NSSet, withEvent event: UIEvent) {
+    }
+    
+    override func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
+    }
+    //摇晃相关
+    override func motionBegan(motion: UIEventSubtype, withEvent event: UIEvent) {
+    }
+    
+    override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent) {
+    }
+    
+    override func motionCancelled(motion: UIEventSubtype, withEvent event: UIEvent) {
+    }
+    
+    //远程控制相关
+    override func remoteControlReceivedWithEvent(event: UIEvent) {
+    }
+```
+
+**获得事件的触摸**
+
+```objectivec
+//所有的触摸
+let allTouches = event.allTouches()
+//获得UIView的触摸
+event.touchesForView(self.view)
+//获得UIWindow的触摸
+event.touchesForWindow(self.view.window!)
+```
+
+**事件的时间戳**
+```objectivec
+//事件的时间戳
+event.timestamp
+```
+
+**事件中特定手势的触摸**
+```objectivec
+let gesture = UITapGestureRecognizer(target: self, action: "Tap")
+event.touchesForGestureRecognizer(gesture)
+```
+
+**三种事件类型**
+```objectivec
+UIEventTypeTouches
+UIEventTypeMotion
+UIEventTypeRemoteControl
+```
+
+**事件亚类型**
+```objectivec
+UIEventSubtypeNone                              = 0,//触摸事件的亚类型
+        
+UIEventSubtypeMotionShake                       = 1,//摇晃
+        
+UIEventSubtypeRemoteControlPlay                 = 100,//播放
+UIEventSubtypeRemoteControlPause                = 101,//暂停
+UIEventSubtypeRemoteControlStop                 = 102,//停止
+UIEventSubtypeRemoteControlTogglePlayPause      = 103,//播放和暂停切换
+UIEventSubtypeRemoteControlNextTrack            = 104,//下一首
+UIEventSubtypeRemoteControlPreviousTrack        = 105,//上一首
+UIEventSubtypeRemoteControlBeginSeekingBackward = 106,//开始后退
+UIEventSubtypeRemoteControlEndSeekingBackward   = 107,//结束后退
+UIEventSubtypeRemoteControlBeginSeekingForward  = 108,//开始快进
+UIEventSubtypeRemoteControlEndSeekingForward    = 109,//结束快进
+```
+
+
+---
+
+## 事件传递
+![shijianchuandi](./assets/shijian.png)
+![shijianchuandi](./assets/buneng.png)
+
+
+---
+
+## hitTest , 手动添加的手势 , 不起作用 , 大坑, 如果子view 脱离 父view的范围...
+使用UIButton 能解决这个问题...  
+好像是 injected 搞的鬼 - - , 还得测试...
+
+---
+
+## 解决NSTimer/CADisplayLink的循环引用
+https://www.jianshu.com/p/5068b6f02238
+
+---
+
+## iOS开发UI篇--仿射变换(CGAffineTransform)使用小结
+http://www.imooc.com/article/265329?block_id=tuijian_wz
+## CGAffineTransform 简单分析
+http://xummer26.com/blog/CGAffineTransform-simple-analysis.html
+## 线性代数...shit...

@@ -8,26 +8,36 @@
 
 #import "T113ViewController.h"
 
-@interface  T113ViewController ()
+@interface T113ViewController ()
 
 @end
 
-@implementation  T113ViewController
+@implementation T113ViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+  [super viewDidLoad];
+  // Do any additional setup after loading the view.
+  [self entry];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)injected {
+  [self.view.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+  [self.view.layer.sublayers makeObjectsPerformSelector:@selector(removeFromSuperlayer)];
+  // [self.views removeAllObjects];
+  // self.views = nil;
+  [self entry];
 }
-*/
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(nullable UIEvent *)event {
+  [self.view.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+  [self.view.layer.sublayers makeObjectsPerformSelector:@selector(removeFromSuperlayer)];
+
+  [self entry];
+}
+
+- (void)entry {
+
+}
 
 @end
     

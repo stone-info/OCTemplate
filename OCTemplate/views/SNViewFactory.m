@@ -87,11 +87,13 @@ UIImageView *makeImageView(BOOL board) {
   // UI优化
   // https://www.jianshu.com/p/85837799f3eb
   imageView.opaque                = YES;
-  // imageView.layer.cornerRadius    = 14.0;
-  // imageView需要这步操作, 因为layer.contents
-  // imageView.layer.masksToBounds   = YES;
-  // 光栅化
-  imageView.layer.shouldRasterize = YES;
+  // // imageView.layer.cornerRadius    = 14.0;
+  // // imageView需要这步操作, 因为layer.contents
+  // // imageView.layer.masksToBounds   = YES;
+
+  // 光栅化, 场景切换的时候 表现很奇怪..., 图片切换的场景就不要用咯
+  // 关于光栅化 https://blog.csdn.net/lg767201403/article/details/50960909
+  // imageView.layer.shouldRasterize = YES;
 
   // imageView.backgroundColor       = UIColor.whiteColor;
 

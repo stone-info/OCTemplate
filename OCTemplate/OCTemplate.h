@@ -90,5 +90,6 @@ FOUNDATION_EXPORT const unsigned char OCTemplateVersionString[];
 
 // tool
 #import <OCTemplate/SNAnimation.h>
+#import <OCTemplate/SNWeakProxy.h>
 
 //#import "SNAnimation.h"

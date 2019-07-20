@@ -111,34 +111,37 @@ ENDLog(@"GROUP END ■■■■■■■■■■■■■■■■■■■■�
 #define printMethods(kls) \
 do {\
 STARTLog(@"GROUP START ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")\
-Class cls = kls;\
-{\
-unsigned int count    = 0;\
-Method       *pMethod = class_copyMethodList(cls, &count);\
-for (int     i        = 0; i < count; i++) {\
-Method     pObjc_method  = pMethod[i];\
-SEL        pSelector     = method_getName(pObjc_method);\
-NSString   *methodName   = NSStringFromSelector(pSelector);\
-int        argumentCount = method_getNumberOfArguments(pObjc_method);\
-const char *typeEncoding = method_getTypeEncoding(pObjc_method);\
-printf("\033[1;7;48m -[%-50s]\t\t%-10s%20s \033[0m\n", methodName.UTF8String, kStringFormat(@"%i", argumentCount).UTF8String, typeEncoding);\
-}\
+Class          cls        = kls;\
+unsigned int   count      = 0;\
+Method         *pMethod   = class_copyMethodList(cls, &count);\
+NSInteger      length     = 0;\
+NSInteger      typeLength = 0;\
+NSMutableArray *arrM      = [NSMutableArray array];\
+for (int       i          = 0; i < count; i++) {\
+Method       pObjc_method  = pMethod[i];\
+SEL          pSelector     = method_getName(pObjc_method);\
+NSString     *methodName   = kStringFormat(@"-[%@]", NSStringFromSelector(pSelector));\
+const char   *typeEncoding = method_getTypeEncoding(pObjc_method);\
+int          argumentCount = method_getNumberOfArguments(pObjc_method);\
+NSDictionary *obj          = @{@"methodName": methodName, @"typeEncoding": kStringFormat(@"%s", typeEncoding), @"argumentCount": @(argumentCount)};\
+[arrM addObject:obj];\
+length = MAX(methodName.length, length);\
+typeLength = MAX(strlen(typeEncoding), typeLength);\
 }\
 \
-NSString   *data       = kStringFormat(@"%@", cls);\
-const char *utf8String = [data UTF8String];\
-Class      metaClass   = objc_getMetaClass(utf8String);\
-{\
-unsigned int count    = 0;\
-Method       *pMethod = class_copyMethodList(metaClass, &count);\
-for (int     i        = 0; i < count; i++) {\
-Method     pObjc_method  = pMethod[i];\
-SEL        pSelector     = method_getName(pObjc_method);\
-NSString   *methodName   = NSStringFromSelector(pSelector);\
-int        argumentCount = method_getNumberOfArguments(pObjc_method);\
-const char *typeEncoding = method_getTypeEncoding(pObjc_method);\
-printf("\033[1;7;48m -[%-50s]\t\t%-10s%20s \033[0m\n", methodName.UTF8String, kStringFormat(@"%i", argumentCount).UTF8String, typeEncoding);\
-}\
+[arrM sortUsingComparator:^NSComparisonResult(NSDictionary *obj1, NSDictionary *obj2) {\
+NSString *s1 = obj1[@"methodName"];\
+NSString *s2 = obj2[@"methodName"];\
+return [s1 compare:s2];\
+}];\
+\
+for (NSUInteger i = 0; i < arrM.count; ++i) {\
+NSDictionary *dict         = arrM[i];\
+NSString     *methodName   = kStringFormat(kStringFormat(@"%%-%lis", length), [dict[@"methodName"] UTF8String]);\
+NSString     *typeEncoding = kStringFormat(kStringFormat(@"%%-%lis", typeLength), [dict[@"typeEncoding"] UTF8String]);\
+int          argumentCount = [dict[@"argumentCount"] intValue];\
+char         *string       = "\033[1;7;48m %s\t%-10s%s \033[0m\n";\
+printf(string, methodName.UTF8String, kStringFormat(@"%i", argumentCount).UTF8String, typeEncoding.UTF8String);\
 }\
 ENDLog(@"GROUP END ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")\
 } while (0);

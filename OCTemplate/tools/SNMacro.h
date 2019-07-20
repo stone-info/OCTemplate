@@ -256,6 +256,104 @@ return self;                                                       \
 // #endif
 // #endif
 
+//____________2019-07-20_________________________________________________▲△__.
+// animationWithKeyPath的值：
+// transform.scale = 比例轉換
+// transform.scale.x = 闊的比例轉換
+// transform.scale.y = 高的比例轉換
+// transform.rotation.z = 平面圖的旋轉
+// opacity = 透明度
+// margin
+// zPosition
+// backgroundColor    背景颜色
+// cornerRadius    圆角
+// borderWidth
+// bounds
+// contents
+// contentsRect
+// cornerRadius
+// frame
+// hidden
+// mask
+// masksToBounds
+// opacity
+// position
+// shadowColor
+// shadowOffset
+// shadowOpacity
+// shadowRadius
+#define SNTransformScale @"transform.scale"
+#define SNTransformScaleX @"transform.scale.x"
+#define SNTransformScaleY @"transform.scale.y"
+#define SNTransformoRotationZ @"transform.rotation.z"
+#define SNTransformoRotationX @"transform.rotation.x"
+#define SNTransformoRotationY @"transform.rotation.y"
+// 配合 anim.path = path.CGPath使用
+#define SNTransformTranslation @"position"
+#define SNTransformTranslationX @"position.x"
+#define SNTransformTranslationY @"position.y"
+#define SNTransformTranslationZ @"zPosition" // 没测试...
 
+// #define kScale(view, sx, sy) (view.transform = CGAffineTransformScale(view.transform, sx, sy))
+// #define kRotate(view, degrees) (view.transform = CGAffineTransformRotate(view.transform, (M_PI * (degrees) / 180.0)))
+// #define kRotateWithRadian(view, radian) (view.transform = CGAffineTransformRotate(view.transform, radian))
+// #define kRotateWithDegrees(view, degrees) (view.transform = CGAffineTransformRotate(view.transform, (M_PI * (degrees) / 180.0)))
+// #define kTranslate(view, tx, ty) (view.transform = CGAffineTransformTranslate(view.transform, tx, ty))
+//
+// #define kScaleWithMake(view, sx, sy) (view.transform = CGAffineTransformMakeScale(sx, sy))
+// #define kRotateWithMake(view, degrees) (view.transform = CGAffineTransformMakeRotation((M_PI * (degrees) / 180.0)))
+// #define kRotateWithMakeRadian(view, radian) (view.transform = CGAffineTransformMakeRotation(radian))
+// #define kRotateWithMakeDegrees(view, degrees) (view.transform = CGAffineTransformMakeRotation((M_PI * (degrees) / 180.0)))
+// #define kTranslateWithMake(view, tx, ty) (view.transform = CGAffineTransformMakeTranslation(tx, ty))
 
+// 自定义view中使用 拖拽
+// 使用: - (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event { SNDrag; }
+#define SNDrag   UITouch *touch = [touches anyObject];\
+CGPoint currentPoint  = [touch locationInView:self];\
+CGPoint previousPoint = [touch previousLocationInView:self];\
+CGFloat offsetX = currentPoint.x - previousPoint.x;\
+CGFloat offsetY = currentPoint.y - previousPoint.y;\
+self.transform = CGAffineTransformTranslate(self.transform, offsetX, offsetY);
+
+// 长按手势拖拽
+// #define SNLongPressDrag ({UIGestureRecognizerState state = sender.state;static CGPoint previousPoint;switch (state) {case UIGestureRecognizerStateBegan: { /* NSLog(@"%s-%@", __func__, @"UIGestureRecognizerStateBegan");*/ previousPoint = [sender locationInView:sender.view.superview];break;}case UIGestureRecognizerStateChanged: { /* NSLog(@"%s-%@", __func__, @"UIGestureRecognizerStateChanged");*/ CGPoint currentPoint = [sender locationInView:sender.view.superview];sender.view.transform = CGAffineTransformTranslate(sender.view.transform, currentPoint.x - previousPoint.x, currentPoint.y - previousPoint.y);previousPoint = currentPoint;break;}case UIGestureRecognizerStateEnded: { /* NSLog(@"%s-%@", __func__, @"UIGestureRecognizerStateEnded");*/ break;}case UIGestureRecognizerStateCancelled: { /* NSLog(@"%s-%@", __func__, @"UIGestureRecognizerStateCancelled");*/ break;}default: { /* NSLog(@"state = %@", state == UIGestureRecognizerStateFailed ? @"UIGestureRecognizerStateFailed" : @"UIGestureRecognizerStatePossible");*/ break;}}})
+// Pan手势
+#define SNPanDrag ({CGPoint point = [sender translationInView:sender.view];sender.view.transform = CGAffineTransformTranslate(sender.view.transform, point.x, point.y); /* 恢复到初始状态*/ [sender setTranslation:CGPointZero inView:sender.view];dispatch_async(dispatch_get_main_queue(), ^{if (sender.view.left < 0) {sender.view.left = 0;}if (sender.view.right > sender.view.superview.width) {sender.view.right = sender.view.superview.width;}if (sender.view.top < 0) {sender.view.top = 0;}if (sender.view.bottom > sender.view.superview.height) {sender.view.bottom = sender.view.superview.height;}});})
+// Pinch手势
+#define SNPinchScale ({sender.view.transform = CGAffineTransformScale(sender.view.transform, sender.scale, sender.scale); /* 复位*/ sender.scale = 1;})
+// Rotation手势
+#define SNRotationRotate ({sender.view.transform = CGAffineTransformRotate(sender.view.transform, sender.rotation); /* "归零" 恢复到最初始的状态*/ sender.rotation       = 0;})
+
+#define kCreateObjectWithString(CLASSNAME)   (id)([[NSClassFromString(CLASSNAME) alloc] init])
+
+#define checkNull(__X__)        (__X__) == nil || [(__X__) isEqual:[NSNull null]] || [(__X__) isEqual:@"null"] ? @"" : [NSString stringWithFormat:@"%@", (__X__)]
+
+#define SNGuideLine ({CGFloat centerX = rect.size.width * 0.5;CGFloat centerY = rect.size.height * 0.5;CGFloat height  = rect.size.height;CGFloat width  = rect.size.width;UIBezierPath *path = [UIBezierPath bezierPath];[HexRGBA(@"0xFFC1C1", 1.0) setStroke];[path moveToPoint:CGPointMake(centerX, 0)];[path addLineToPoint:CGPointMake(centerX, height)];[path moveToPoint:CGPointMake(0, centerY)];[path addLineToPoint:CGPointMake(width, centerY)];[path stroke];})
+
+// 长按手势拖拽
+#define SNLongPressDrag(sender) do {\
+UIGestureRecognizerState state = sender.state;\
+static CGPoint           previousPoint;\
+switch (state) {\
+case UIGestureRecognizerStateBegan: {\
+previousPoint = [sender locationInView:sender.view.superview];\
+break;\
+}\
+case UIGestureRecognizerStateChanged: {\
+CGPoint currentPoint = [sender locationInView:sender.view.superview];\
+sender.view.transform = CGAffineTransformTranslate(sender.view.transform, currentPoint.x - previousPoint.x, currentPoint.y - previousPoint.y);\
+            previousPoint = currentPoint;\
+break;\
+}\
+case UIGestureRecognizerStateEnded: {\
+break;\
+}\
+case UIGestureRecognizerStateCancelled: {\
+break;\
+}\
+default: {\
+break;\
+}\
+}\
+} while (0);
 #endif /* SNMacro_h */

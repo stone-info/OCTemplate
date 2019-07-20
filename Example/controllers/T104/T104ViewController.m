@@ -8,26 +8,75 @@
 
 #import "T104ViewController.h"
 
-@interface  T104ViewController ()
+@interface T104ViewController ()
 
 @end
 
-@implementation  T104ViewController
+@implementation T104ViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+  [super viewDidLoad];
+  // Do any additional setup after loading the view.
+  [self entry];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)injected {
+  [self.view.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+  [self.view.layer.sublayers makeObjectsPerformSelector:@selector(removeFromSuperlayer)];
+  // [self.views removeAllObjects];
+  // self.views = nil;
+  [self entry];
 }
-*/
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(nullable UIEvent *)event {
+  [self.view.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+  [self.view.layer.sublayers makeObjectsPerformSelector:@selector(removeFromSuperlayer)];
+
+  [self entry];
+}
+
+- (void)entry {
+
+  UIView *mView = makeView(true);
+  [self.view addSubview:mView];
+
+  kMasKey(mView);
+  [mView mas_makeConstraints:^(MASConstraintMaker *make) {
+    CGFloat padding = 100;
+    // make.top.offset(10);
+    make.top.offset(kStatusBarHeight + kNavigationBarHeight + padding);
+    make.left.offset(padding);
+    make.right.offset(-padding);
+    // make.height.mas_greaterThanOrEqualTo(50);
+    make.height.mas_equalTo(mView.mas_width).multipliedBy(1); // 高/宽
+  }];
+
+  CAAnimationGroup *group = [CAAnimationGroup animation];
+
+  NSMutableArray<CAAnimation *> *arrM = [NSMutableArray array];
+
+  {
+    CABasicAnimation *animation = [CABasicAnimation animation];
+    animation.keyPath = @"position.y";
+    animation.toValue = @400;
+    [arrM addObject:animation];
+    // [mView.layer addAnimation:animation forKey:nil];
+  }
+
+  {
+    CABasicAnimation *animation = [CABasicAnimation animation];
+    animation.keyPath = @"transform.scale";
+    animation.toValue = @0.5;
+    [arrM addObject:animation];
+    // [mView.layer addAnimation:animation forKey:nil];
+  }
+
+  group.animations = arrM;
+  group.removedOnCompletion = NO;
+  group.fillMode = kCAFillModeForwards;
+
+  [mView.layer addAnimation:group forKey:nil];
+}
 
 @end
     
