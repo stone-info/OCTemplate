@@ -1,0 +1,94 @@
+{
+  "name": "OCTemplate",
+  "version": "0.0.22",
+  "summary": "A short description of OCTemplate.",
+  "description": "OCTemplate git test",
+  "homepage": "http://EXAMPLE/OCTemplate",
+  "license": "MIT",
+  "authors": {
+    "StonePark": "blueone009@163.com"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source": {
+    "git": "https://github.com/stone0117/OCTemplate.git",
+    "tag": "0.0.22"
+  },
+  "public_header_files": "OCTemplate/OCTemplate.h",
+  "source_files": "OCTemplate/OCTemplate.h",
+  "resource_bundles": {
+    "OCTemplate": [
+      "OCTemplate/**/*.xib"
+    ]
+  },
+  "requires_arc": true,
+  "dependencies": {
+    "MJExtension": [
+      "~> 3.0.17"
+    ],
+    "MJRefresh": [
+      "~> 3.2.0"
+    ],
+    "Masonry": [
+      "~> 1.1.0"
+    ],
+    "MBProgressHUD": [
+      "~> 1.1.0"
+    ],
+    "YTKNetwork": [
+      "~> 2.0.4"
+    ],
+    "IGListKit": [
+      "~> 3.4.0"
+    ],
+    "YYText": [
+      "~> 1.0.7"
+    ],
+    "YYImage": [
+      "~> 1.0.4"
+    ],
+    "ReactiveObjC": [
+      "~> 3.0.0"
+    ],
+    "IQKeyboardManager": [
+      "~> 6.3.0"
+    ],
+    "SDWebImage/GIF": [
+      "4.4.3"
+    ],
+    "SDCycleScrollView": [
+      "1.75"
+    ],
+    "KVOController": [
+      "~> 1.2.0"
+    ]
+  },
+  "subspecs": [
+    {
+      "name": "ThirdParty",
+      "source_files": "OCTemplate/ThirdParty/**/*.{h,m}",
+      "public_header_files": "OCTemplate/ThirdParty/**/*.h"
+    },
+    {
+      "name": "categories",
+      "source_files": "OCTemplate/categories/*.{h,m}",
+      "public_header_files": "OCTemplate/categories/*.h"
+    },
+    {
+      "name": "templates",
+      "source_files": "OCTemplate/templates/*.{h,m}",
+      "public_header_files": "OCTemplate/templates/*.h"
+    },
+    {
+      "name": "tools",
+      "source_files": "OCTemplate/tools/*.{h,m}",
+      "public_header_files": "OCTemplate/tools/*.h"
+    },
+    {
+      "name": "views",
+      "source_files": "OCTemplate/views/*.{h,m}",
+      "public_header_files": "OCTemplate/views/*.h"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+//
+//  SNPrefix.pch
+//  Lottery
+//
+//  Created by stone on 2019/7/20.
+//  Copyright © 2019 stone. All rights reserved.
+//
+
+#ifndef SNPrefix_pch
+#define SNPrefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import <OCTemplate/OCTemplate.h>
+#import "SNSaveTool.h"
+
+#endif /* SNPrefix_pch */
